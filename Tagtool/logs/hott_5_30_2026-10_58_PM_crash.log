@@ -1,0 +1,564 @@
+TagTool [1.5.9646.21538 (Built 5/30/2026 1:58:01 AM UTC)]
+
+Please report any bugs and/or feature requests:
+https://github.com/TheGuardians/TagTool/issues
+
+Enter the path to a Halo cache file (.map/.dat):
+> D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+
+Enter "help" to list available commands. Enter "quit" to quit.
+
+tags> 
+
+tags> ##Set Variables
+
+tags> SetVariable WorkingDir "D:\eldewrito\Projects\Campaigns\H3 Campaign"
+Variable "WorkingDir" set to "D:\eldewrito\Projects\Campaigns\H3 Campaign".
+
+tags> SetVariable ShaderComp "E:\Halo Resources\Halo3"
+Variable "ShaderComp" set to "E:\Halo Resources\Halo3".
+
+tags> SetVariable 360CampaignMaps "E:\Halo Resources\Halo3"
+Variable "360CampaignMaps" set to "E:\Halo Resources\Halo3".
+
+tags> SetVariable MCCCampaignMaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+Variable "MCCCampaignMaps" set to "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps".
+
+tags> 
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3 Campaign v7_8.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> extractfonts font
+
+tags\Halo 3: Campaign.pak> extractfonts h3fonts
+
+tags\Halo 3: Campaign.pak> help extractfont
+[ERROR]: Unable to find command "extractfont"
+
+tags\Halo 3: Campaign.pak> help extractfonts
+
+   ExtractFonts:
+     Extract fonts from mod package to specified file.
+     
+
+   Usage:
+     ExtractFonts <destination>
+
+   Notes:
+     Extract fonts from mod package to specified file.
+     
+
+tags\Halo 3: Campaign.pak> extractfonts h3fonts.bin
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> help
+Available commands for tags:
+
+AddForgeCategory        Add a custom category to host Forge objects.
+AddForgeItem            Add an item to an existing forge palette category.
+CheckTag                Checks the validity of a tag, a group, or all tags in the cache if not specified.
+Clear                   Clears the screen of all output
+ConvertMapVariant       Converts a map variant
+ConvertPlugins          Convert Assembly plugins to tag layout structures
+CreateBlfImage          Creates a BLF from a JPEG image
+CreateCharacterType     Builds a character type from a biped tag.
+CreateModPackage        Create context for a mod package. Optionally have more than one tag cache and use unmanaged 
+                        streams for 2gb + resources.
+CreateTag               Creates a new tag of the specified tag group in the current tag cache.
+DefineShaderMacro       Utility command to define a global macro used during shader compilation
+DiffTag                 Deep compares two tags and lists their differences.
+DumpLog                 Dumps the current log into the logs directory.
+DumpStringIdNamespaces  Dumps the string id namespaces to an xml file
+Echo                    Prints arguments to the console.
+ExtractBitmaps          Extract all bitmaps to a folder
+ExtractBlfImage         Extracts the image from a blf
+ExtractTag              Writes tag data to a file. (To be used with 'ImportTag')
+GenerateBitmap          Creates a new bitm tag with a specified name from a DDS image.
+GenerateCampaignFile    Generate the halo3.campaign file for the specificed map info folder
+GenerateRenderMethod    Generates a render method tag from the specified template
+GenerateShader          Generates a shader template
+GetTagAddress           Get the address of a tag in memory
+GetTagInfo              Displays detailed information about a tag.
+GuessTagDef             Infers basic tag definition sizes from cache data for a tag type
+Help                    Display help
+ImportFonts             Import fonts into Halo Online cache.
+ImportTag               Overwrites a tag with data from a file.
+ListAllStrings          Scan unic tags to find a localized string
+ListDuplicateTags       Prints out a list of tags with duplicate names.
+ListTags                Lists tag instances that are of the specified tag groups.
+ListVariables           Lists all currently set argument variables.
+LogLevel                Sets the current log level
+NameTag                 Sets the name of a tag file in the current cache.
+OpenModPackage          Create context for an existing mod package.
+RecompileShaders        Recompiles all shader templates
+ReplaceTag              Replaces a tag with another tag from the cache
+RescaleGUI              Rescales H3UI elements to fit a different internal resolution
+RescaleHudText          Rescales chdt text widgets according to the specified scale
+Run                     Runs a command (.cmds) or csharp script (.cs) file 
+RunCommands             Run commands from a file.
+SaveTagNames            Saves the current tag names to the specified csv file.
+SetLocale               Changes the parsing locale of numbers to the specified locale.
+SetVariable             Any instance of <VariableName> in a command argument will be replaced with it's [Value].
+Stopwatch               Utility command for timing other commands.
+StringId                Add, look up, or find stringID values
+SuppressErrors          Suppresses errors that would otherwise cause the script to terminate
+SwitchObjectType        Creates a new tag from a specified obje tag with a different type.
+TagDependency           Manage tag dependencies.
+TagResource             Manage raw resource data
+TagResourceReport       Generate a report on tag resources usage for the specified tag or current cache
+UndefineShaderMacro     Utility command to undefine a global macro
+UpdateMapFiles          Updates the game's .map files to contain valid scenario indices.
+UpdateModPackage        Update a mod package to match the current base cache. Optionally use unmanaged streams for 2gb 
+                        + resources.
+UseShaderCache          Specify a directory to store shader cache
+UseXSD                  Specify the directory to your xsd.exe for xbox 360 shader decompiler
+VerifyStrings           Verifies the string table is resolving properly
+
+Available commands for Halo 3: Campaign.pak:
+
+AddModFiles              Adds the files in the directory to the mod package
+AddTagCache              Add the specified number of tag caches to the mod package.
+ApplyModPackage          Apply current mod package to the base cache. 
+
+CollisionModelTest       Collision geometry import command (Test)
+CS                       Compile and evaluate csharp code
+DeleteModFiles           Deletes all the Mod files in the package
+DeleteTag                Nulls and removes a tag from the cache.
+DeleteTagCache           Deletes the tag cache at the specified index.
+
+DumpDisassembledShaders  Dump disassembled shaders
+DuplicateTag             Copies a tag's data into a new tag and optionally names it.
+EditTag                  Edit tag-specific data
+ExportTagMod             Generates a TagTool script for the specified tag(s). See 'Help ExportTagMod' instructions.
+ExtractAllTags           Extracts all tags in the current tag cache to a specific directory.
+ExtractFonts             Extract fonts from mod package to specified file.
+
+FindValue                Performs a deep search for a field value.
+ForEach                  Executes a command on every instance of the specified tag group.
+GenerateAssemblyPlugins  Converts tag definitions to Assembly Plugin files..
+GenerateCanvas           Generates a mostly empty scenario.
+GeneratePhysicsModel     Physics model import command.
+ImportAnimation          Import animation(s) into a new ModelAnimationGraph tag
+ImportCollisionGeometry  Collision geometry import command
+ImportLooseTag           Import a loose tag from Halo 3 MCC
+ListInvalidBitmaps       Lists all bitmaps with an invalid tag resource in the current tag cache
+ListModFiles             Lists the files in the current mod package
+ListNullTags             Lists all null tag indices in the current tag cache
+ListUnnamedTags          Lists all unnamed tags in the current tag cache
+ListUnusedTags           Lists all unreferenced tags in the current tag cache
+MapFile                  Manage map files
+ModCacheInfo             Display information about the currently active mod cache
+ModTypes                 Output current type flags
+NameShaderTags           Attempts to name various shader tags in the current cache.
+NameTagCache             Set the name of the tag cache at the specified index.
+
+OpenCacheFile            Opens a porting context with the specified cache file.
+SaveModPackage           Save current mod package cache to a pack
+SwitchTagCache           Change the the current tag cache to the specified index.
+Test                     Test
+Test2                    Test2
+TestSerializer           Tests whether the serializer serializes tags that can match those that exist in the cache
+UpdateDescription        Update description of mod package.
+
+
+Use "help <command>" for more information on how to use a command.
+
+To write the output of a command to a file instead of the screen,
+use > followed by the name of a file. For example,
+"list bipd > bipeds.txt" will write a list of bipd tags to bipeds.txt.
+
+All numbers and tag indices will be parsed as big-endian hexadecimal.
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> importfonts "WorkingDir\h3fonts.bin"
+Done!
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 1 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> 
+
+tags\Halo 3: Campaign.pak> help
+Available commands for tags:
+
+AddForgeCategory        Add a custom category to host Forge objects.
+AddForgeItem            Add an item to an existing forge palette category.
+CheckTag                Checks the validity of a tag, a group, or all tags in the cache if not specified.
+Clear                   Clears the screen of all output
+ConvertMapVariant       Converts a map variant
+ConvertPlugins          Convert Assembly plugins to tag layout structures
+CreateBlfImage          Creates a BLF from a JPEG image
+CreateCharacterType     Builds a character type from a biped tag.
+CreateModPackage        Create context for a mod package. Optionally have more than one tag cache and use unmanaged 
+                        streams for 2gb + resources.
+CreateTag               Creates a new tag of the specified tag group in the current tag cache.
+DefineShaderMacro       Utility command to define a global macro used during shader compilation
+DiffTag                 Deep compares two tags and lists their differences.
+DumpLog                 Dumps the current log into the logs directory.
+DumpStringIdNamespaces  Dumps the string id namespaces to an xml file
+Echo                    Prints arguments to the console.
+ExtractBitmaps          Extract all bitmaps to a folder
+ExtractBlfImage         Extracts the image from a blf
+ExtractTag              Writes tag data to a file. (To be used with 'ImportTag')
+GenerateBitmap          Creates a new bitm tag with a specified name from a DDS image.
+GenerateCampaignFile    Generate the halo3.campaign file for the specificed map info folder
+GenerateRenderMethod    Generates a render method tag from the specified template
+GenerateShader          Generates a shader template
+GetTagAddress           Get the address of a tag in memory
+GetTagInfo              Displays detailed information about a tag.
+GuessTagDef             Infers basic tag definition sizes from cache data for a tag type
+Help                    Display help
+ImportFonts             Import fonts into Halo Online cache.
+ImportTag               Overwrites a tag with data from a file.
+ListAllStrings          Scan unic tags to find a localized string
+ListDuplicateTags       Prints out a list of tags with duplicate names.
+ListTags                Lists tag instances that are of the specified tag groups.
+ListVariables           Lists all currently set argument variables.
+LogLevel                Sets the current log level
+NameTag                 Sets the name of a tag file in the current cache.
+OpenModPackage          Create context for an existing mod package.
+RecompileShaders        Recompiles all shader templates
+ReplaceTag              Replaces a tag with another tag from the cache
+RescaleGUI              Rescales H3UI elements to fit a different internal resolution
+RescaleHudText          Rescales chdt text widgets according to the specified scale
+Run                     Runs a command (.cmds) or csharp script (.cs) file 
+RunCommands             Run commands from a file.
+SaveTagNames            Saves the current tag names to the specified csv file.
+SetLocale               Changes the parsing locale of numbers to the specified locale.
+SetVariable             Any instance of <VariableName> in a command argument will be replaced with it's [Value].
+Stopwatch               Utility command for timing other commands.
+StringId                Add, look up, or find stringID values
+SuppressErrors          Suppresses errors that would otherwise cause the script to terminate
+SwitchObjectType        Creates a new tag from a specified obje tag with a different type.
+TagDependency           Manage tag dependencies.
+TagResource             Manage raw resource data
+TagResourceReport       Generate a report on tag resources usage for the specified tag or current cache
+UndefineShaderMacro     Utility command to undefine a global macro
+UpdateMapFiles          Updates the game's .map files to contain valid scenario indices.
+UpdateModPackage        Update a mod package to match the current base cache. Optionally use unmanaged streams for 2gb 
+                        + resources.
+UseShaderCache          Specify a directory to store shader cache
+UseXSD                  Specify the directory to your xsd.exe for xbox 360 shader decompiler
+VerifyStrings           Verifies the string table is resolving properly
+
+Available commands for Halo 3: Campaign.pak:
+
+AddModFiles              Adds the files in the directory to the mod package
+AddTagCache              Add the specified number of tag caches to the mod package.
+ApplyModPackage          Apply current mod package to the base cache. 
+
+CollisionModelTest       Collision geometry import command (Test)
+CS                       Compile and evaluate csharp code
+DeleteModFiles           Deletes all the Mod files in the package
+DeleteTag                Nulls and removes a tag from the cache.
+DeleteTagCache           Deletes the tag cache at the specified index.
+
+DumpDisassembledShaders  Dump disassembled shaders
+DuplicateTag             Copies a tag's data into a new tag and optionally names it.
+EditTag                  Edit tag-specific data
+ExportTagMod             Generates a TagTool script for the specified tag(s). See 'Help ExportTagMod' instructions.
+ExtractAllTags           Extracts all tags in the current tag cache to a specific directory.
+ExtractFonts             Extract fonts from mod package to specified file.
+
+FindValue                Performs a deep search for a field value.
+ForEach                  Executes a command on every instance of the specified tag group.
+GenerateAssemblyPlugins  Converts tag definitions to Assembly Plugin files..
+GenerateCanvas           Generates a mostly empty scenario.
+GeneratePhysicsModel     Physics model import command.
+ImportAnimation          Import animation(s) into a new ModelAnimationGraph tag
+ImportCollisionGeometry  Collision geometry import command
+ImportLooseTag           Import a loose tag from Halo 3 MCC
+ListInvalidBitmaps       Lists all bitmaps with an invalid tag resource in the current tag cache
+ListModFiles             Lists the files in the current mod package
+ListNullTags             Lists all null tag indices in the current tag cache
+ListUnnamedTags          Lists all unnamed tags in the current tag cache
+ListUnusedTags           Lists all unreferenced tags in the current tag cache
+MapFile                  Manage map files
+ModCacheInfo             Display information about the currently active mod cache
+ModTypes                 Output current type flags
+NameShaderTags           Attempts to name various shader tags in the current cache.
+NameTagCache             Set the name of the tag cache at the specified index.
+
+OpenCacheFile            Opens a porting context with the specified cache file.
+SaveModPackage           Save current mod package cache to a pack
+SwitchTagCache           Change the the current tag cache to the specified index.
+Test                     Test
+Test2                    Test2
+TestSerializer           Tests whether the serializer serializes tags that can match those that exist in the cache
+UpdateDescription        Update description of mod package.
+
+
+Use "help <command>" for more information on how to use a command.
+
+To write the output of a command to a file instead of the screen,
+use > followed by the name of a file. For example,
+"list bipd > bipeds.txt" will write a list of bipd tags to bipeds.txt.
+
+All numbers and tag indices will be parsed as big-endian hexadecimal.
+
+tags\Halo 3: Campaign.pak> edittag ui\chud\assault_rifle.chud_definition
+Tag ui\chud\assault_rifle.chud_definition has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 3: Campaign.pak.
+
+tags\Halo 3: Campaign.pak\ui\chud\assault_rifle.chud_definition> help
+Available commands for tags:
+
+AddForgeCategory        Add a custom category to host Forge objects.
+AddForgeItem            Add an item to an existing forge palette category.
+CheckTag                Checks the validity of a tag, a group, or all tags in the cache if not specified.
+Clear                   Clears the screen of all output
+ConvertMapVariant       Converts a map variant
+ConvertPlugins          Convert Assembly plugins to tag layout structures
+CreateBlfImage          Creates a BLF from a JPEG image
+CreateCharacterType     Builds a character type from a biped tag.
+CreateModPackage        Create context for a mod package. Optionally have more than one tag cache and use unmanaged streams for 2gb + 
+                        resources.
+CreateTag               Creates a new tag of the specified tag group in the current tag cache.
+DefineShaderMacro       Utility command to define a global macro used during shader compilation
+DiffTag                 Deep compares two tags and lists their differences.
+DumpLog                 Dumps the current log into the logs directory.
+DumpStringIdNamespaces  Dumps the string id namespaces to an xml file
+Echo                    Prints arguments to the console.
+ExtractBitmaps          Extract all bitmaps to a folder
+ExtractBlfImage         Extracts the image from a blf
+ExtractTag              Writes tag data to a file. (To be used with 'ImportTag')
+GenerateBitmap          Creates a new bitm tag with a specified name from a DDS image.
+GenerateCampaignFile    Generate the halo3.campaign file for the specificed map info folder
+GenerateRenderMethod    Generates a render method tag from the specified template
+GenerateShader          Generates a shader template
+GetTagAddress           Get the address of a tag in memory
+GetTagInfo              Displays detailed information about a tag.
+GuessTagDef             Infers basic tag definition sizes from cache data for a tag type
+Help                    Display help
+ImportFonts             Import fonts into Halo Online cache.
+ImportTag               Overwrites a tag with data from a file.
+ListAllStrings          Scan unic tags to find a localized string
+ListDuplicateTags       Prints out a list of tags with duplicate names.
+ListTags                Lists tag instances that are of the specified tag groups.
+ListVariables           Lists all currently set argument variables.
+LogLevel                Sets the current log level
+NameTag                 Sets the name of a tag file in the current cache.
+OpenModPackage          Create context for an existing mod package.
+RecompileShaders        Recompiles all shader templates
+ReplaceTag              Replaces a tag with another tag from the cache
+RescaleGUI              Rescales H3UI elements to fit a different internal resolution
+RescaleHudText          Rescales chdt text widgets according to the specified scale
+Run                     Runs a command (.cmds) or csharp script (.cs) file 
+RunCommands             Run commands from a file.
+SaveTagNames            Saves the current tag names to the specified csv file.
+SetLocale               Changes the parsing locale of numbers to the specified locale.
+SetVariable             Any instance of <VariableName> in a command argument will be replaced with it's [Value].
+Stopwatch               Utility command for timing other commands.
+StringId                Add, look up, or find stringID values
+SuppressErrors          Suppresses errors that would otherwise cause the script to terminate
+SwitchObjectType        Creates a new tag from a specified obje tag with a different type.
+TagDependency           Manage tag dependencies.
+TagResource             Manage raw resource data
+TagResourceReport       Generate a report on tag resources usage for the specified tag or current cache
+UndefineShaderMacro     Utility command to undefine a global macro
+UpdateMapFiles          Updates the game's .map files to contain valid scenario indices.
+UpdateModPackage        Update a mod package to match the current base cache. Optionally use unmanaged streams for 2gb + resources.
+UseShaderCache          Specify a directory to store shader cache
+UseXSD                  Specify the directory to your xsd.exe for xbox 360 shader decompiler
+VerifyStrings           Verifies the string table is resolving properly
+
+Available commands for Halo 3: Campaign.pak:
+
+AddModFiles        Adds the files in the directory to the mod package
+AddTagCache        Add the specified number of tag caches to the mod package.
+DeleteModFiles     Deletes all the Mod files in the package
+DeleteTagCache     Deletes the tag cache at the specified index.
+
+ExtractFonts       Extract fonts from mod package to specified file.
+
+ListModFiles       Lists the files in the current mod package
+MapFile            Manage map files
+ModCacheInfo       Display information about the currently active mod cache
+ModTypes           Output current type flags
+NameTagCache       Set the name of the tag cache at the specified index.
+
+SaveModPackage     Save current mod package cache to a pack
+SwitchTagCache     Change the the current tag cache to the specified index.
+UpdateDescription  Update description of mod package.
+
+
+Available commands for ui\chud\assault_rifle.chud_definition:
+
+AddBlockElements     Adds/inserts block element(s) to a specific tag block in the current ChudDefinition definition.
+CopyBlockElements    Copies block elements from one tag to another.
+CS                   Compile and evaluate csharp code
+EditBlock            Edit the fields of a particular block element.
+ExitTo               Exits each context on the stack until the specified one is found.
+ExportCommands       Exports the commands needed to generate the current tag structure
+FindValue            Performs a deep search for a field value.
+ForEach              Executes a command for each element in the specified tag block.
+ListFields           Lists the fields in the current ChudDefinition definition.
+MoveBlockElement     Moves a block element from a specified index of a specific tag block in the current ChudDefinition definition.
+PasteBlockElements   Pastes block element(s) to a specific tag block in the current ChudDefinition definition.
+PokeTagChanges       Pokes changes made to the current chud_definition definition to a running game's memory.
+RemoveBlockElements  Removes block element(s) from a specified index of a specific tag block in the current ChudDefinition definition.
+SaveTagChanges       Saves changes made to the current chud_definition definition.
+SetField             Sets the value of a specific field in the current ChudDefinition definition.
+SwapBlockElements    Swaps a block element from a specified index of a specific tag block in the current ChudDefinition definition.
+
+Use "help <command>" for more information on how to use a command.
+
+To write the output of a command to a file instead of the screen,
+use > followed by the name of a file. For example,
+"list bipd > bipeds.txt" will write a list of bipd tags to bipeds.txt.
+
+All numbers and tag indices will be parsed as big-endian hexadecimal.
+
+tags\Halo 3: Campaign.pak\ui\chud\assault_rifle.chud_definition> exit
+
+tags\Halo 3: Campaign.pak> help rescalehudcontext
+[ERROR]: Unable to find command "rescalehudcontext"
+
+tags\Halo 3: Campaign.pak> help rescalehudtext
+
+   RescaleHudText:
+     Rescales chdt text widgets according to the specified scale
+
+   Usage:
+     RescaleHudText [scale] [all]
+
+   Notes:
+     Rescales chdt text widgets according to the specified scale
+
+tags\Halo 3: Campaign.pak> rescalehudtext 18
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 1 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> switchtagcache 1
+
+Current Tag Cache: 010_jungle.
+
+tags\Halo 3: Campaign.pak> rescalehudtext 18
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.5
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.05
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> importfonts "WorkingDir\h3fonts.bin"
+Done!
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.45
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> switchtagcache 1
+
+Current Tag Cache: 010_jungle.
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> importfonts "WorkingDir\h3fonts.bin"
+Done!
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.05
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> importfonts "WorkingDir\h3fonts.bin"
+Done!
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.005
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> switchtagcache 1
+
+Current Tag Cache: 010_jungle.
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.05
+
+tags\Halo 3: Campaign.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+Done!
+
+tags\Halo 3: Campaign.pak> rescalehudtext 0.005
+
+tags\Halo 3: Campaign.pak> exitmodpackage
+
+tags> openmodpackage "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\H3CampaignV0.1.pak"
+Initializing cache...
+[ERROR]: System.OutOfMemoryException: Insufficient memory to continue the execution of the program.
+   at System.Runtime.InteropServices.Marshal.AllocHGlobal(IntPtr cb)
+   at TagTool.Cache.ModPackage.ReadResourcesSection(EndianReader reader) in D:\REPOS\Epsilon\TagTool\TagTool\Cache\ModPackages\ModPackage.cs:line 538
+   at TagTool.Cache.ModPackage.Load(FileInfo file) in D:\REPOS\Epsilon\TagTool\TagTool\Cache\ModPackages\ModPackage.cs:line 130
+   at TagTool.Cache.ModPackage..ctor(FileInfo file) in D:\REPOS\Epsilon\TagTool\TagTool\Cache\ModPackages\ModPackage.cs:line 72
+   at TagTool.Cache.GameCacheModPackage..ctor(GameCacheHaloOnlineBase baseCache, FileInfo file) in D:\REPOS\Epsilon\TagTool\TagTool\Cache\ModPackages\GameCacheModPackage.cs:line 36
+   at TagTool.Commands.Modding.OpenModPackageCommand.Execute(List`1 args) in D:\REPOS\Epsilon\TagTool\TagTool\Commands\Modding\OpenModPackageCommand.cs:line 61
+   at TagTool.Commands.Common.CommandRunner.ExecuteCommand(CommandContext context, List`1 commandAndArgs, Dictionary`2 argVariables) in D:\REPOS\Epsilon\TagTool\TagTool\Commands\Common\CommandRunner.cs:line 166
+   at TagTool.Commands.Common.CommandRunner.RunCommand(String commandLine, Boolean printInput, Boolean printOutput) in D:\REPOS\Epsilon\TagTool\TagTool\Commands\Common\CommandRunner.cs:line 136
+   at TagTool.Commands.Program.RunCommandLoop(CommandRunner commandRunner, CommandContextStack contextStack) in D:\REPOS\Epsilon\TagTool\TagTool\Program.cs:line 128
+   at TagTool.Commands.Program.MainCore(String[] args) in D:\REPOS\Epsilon\TagTool\TagTool\Program.cs:line 112
+   at TagTool.Commands.Program.Main(String[] args) in D:\REPOS\Epsilon\TagTool\TagTool\Program.cs:line 44

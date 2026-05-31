@@ -1,0 +1,73 @@
+TagTool [1.5.9472.12863 (Built 12/7/2025 7:09:22 AM UTC)]
+
+Please report any bugs and/or feature requests:
+https://github.com/MtnDewIt/TagTool-NET-Test/issues
+
+Enter the path to a Halo cache file (.map/.dat):
+> D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+
+Enter "help" to list available commands. Enter "quit" to quit.
+
+tags> opencache file "D:\Games\steamapps\workshop\content\976730\3622759148\maps\silent.map"
+[ERROR]: Unrecognized command "opencache"
+Use "help" to list available commands.
+
+tags> opencachefile "D:\Games\steamapps\workshop\content\976730\3622759148\maps\silent.map"
+Loading cache...done.
+
+tags\silent.map\tags> portexit
+[ERROR]: Unrecognized command "portexit"
+Use "help" to list available commands.
+
+tags\silent.map\tags> exit
+
+tags> createmodpackage silent
+Creating mod package...
+Done.
+
+tags\silent.pak> porttag single *.scnr
+[ERROR]: Unrecognized command "porttag"
+Use "help" to list available commands.
+
+tags\silent.pak> porttag replace *.scnr
+[ERROR]: Unrecognized command "porttag"
+Use "help" to list available commands.
+
+tags\silent.pak> porttag *.scnr
+[ERROR]: Unrecognized command "porttag"
+Use "help" to list available commands.
+
+tags\silent.pak> porttag single *.scnr
+[ERROR]: Unrecognized command "porttag"
+Use "help" to list available commands.
+
+tags\silent.pak> PortTag single *.scnr
+[ERROR]: Unrecognized command "PortTag"
+Use "help" to list available commands.
+
+tags\silent.pak> PortTag *.scnr
+[ERROR]: Unrecognized command "PortTag"
+Use "help" to list available commands.
+
+tags\silent.pak> opencachefile "D:\Games\steamapps\workshop\content\976730\3622759148\maps\silent.map"
+Loading cache...done.
+
+tags\silent.pak\silent.map\tags> porttag single *sncr
+[ERROR]: Invalid tag name: *sncr
+
+tags\silent.pak\silent.map\tags> porttag single *.scnr
+['scnr', 0x6FD9] hyokin_tags\levels\solo\silent\silent.scenario
+[WARNING]: Scenario 0x6FD9 "silent" NOT using map info
+[ERROR]: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TagTool.BlamFile.CampaignFileGenerator.GenerateCampaignBlf(GameCache cache, FileInfo modInfoFile) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\BlamFile\CampaignFileGenerator.cs:line 87
+   at TagTool.BlamFile.CampaignFileGenerator.GenerateCampaignFile(GameCache cache, FileInfo mapInfo, FileInfo modInfo) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\BlamFile\CampaignFileGenerator.cs:line 28
+   at TagTool.BlamFile.CampaignFileGenerator.GenerateCampaignFile(GameCache cache, GameCache blamCache) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\BlamFile\CampaignFileGenerator.cs:line 61
+   at TagTool.Porting.PortingContext.Finish(Boolean saveStrings) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Porting\PortingContext.cs:line 555
+   at TagTool.Porting.PortingContext.PortingContextScope.Dispose() in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Porting\PortingContext.cs:line 606
+   at TagTool.Commands.Porting.PortTagCommand.Execute(List`1 args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Porting\PortTagCommand.cs:line 63
+   at TagTool.Commands.Porting.PortTagCommand.Execute(List`1 args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Porting\PortTagCommand.cs:line 37
+   at TagTool.Commands.Common.CommandRunner.ExecuteCommand(CommandContext context, List`1 commandAndArgs, Dictionary`2 argVariables) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 159
+   at TagTool.Commands.Common.CommandRunner.RunCommand(String commandLine, Boolean printInput, Boolean printOutput) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 128
+   at TagTool.Commands.Program.RunCommandLoop(CommandRunner commandRunner, CommandContextStack contextStack) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 128
+   at TagTool.Commands.Program.MainCore(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 112
+   at TagTool.Commands.Program.Main(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 44

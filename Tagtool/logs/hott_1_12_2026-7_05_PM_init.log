@@ -1,0 +1,18 @@
+TagTool [1.5.9487.41726 (Built 12/22/2025 11:11:32 PM UTC)]
+
+Please report any bugs and/or feature requests:
+https://github.com/MtnDewIt/TagTool-NET-Test/issues
+
+Enter the path to a Halo cache file (.map/.dat):
+> D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+[ERROR]: System.IO.EndOfStreamException: Unable to read beyond the end of the stream.
+   at System.IO.Stream.ReadAtLeastCore(Span`1 buffer, Int32 minimumBytes, Boolean throwOnEndOfStream)
+   at System.IO.BinaryReader.InternalRead(Span`1 buffer)
+   at System.IO.BinaryReader.ReadUInt32()
+   at TagTool.IO.EndianReader.ReadUInt32(EndianFormat Type) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\IO\EndianReader.cs:line 217
+   at TagTool.Cache.HaloOnline.CachedTagHaloOnline.ReadHeader(BinaryReader reader, StringTable stringTable) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Cache\HaloOnline\CachedTagHaloOnline.cs:line 133
+   at TagTool.Cache.HaloOnline.TagCacheHaloOnline.Load(EndianReader reader, Dictionary`2 names) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Cache\HaloOnline\TagCacheHaloOnline.cs:line 83
+   at TagTool.Cache.HaloOnline.TagCacheHaloOnline..ctor(CacheVersion version, Stream stream, StringTableHaloOnline stringTable, Dictionary`2 names) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Cache\HaloOnline\TagCacheHaloOnline.cs:line 32
+   at TagTool.Cache.HaloOnline.GameCacheHaloOnline..ctor(DirectoryInfo directory) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Cache\HaloOnline\GameCacheHaloOnline.cs:line 52
+   at TagTool.Cache.GameCache.Open(FileInfo file) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Cache\GameCache.cs:line 129
+   at TagTool.Commands.Program.OpenCacheFile(FileInfo fileInfo) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 169

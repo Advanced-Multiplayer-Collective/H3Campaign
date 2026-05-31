@@ -1,0 +1,400 @@
+D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+
+##Set Variables
+SetVariable WorkingDir "D:\eldewrito\Projects\Campaigns\H3 Campaign"
+SetVariable 360CampaignMaps "E:\Halo Resources\Halo3"
+SetVariable MCCCampaignMaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+
+
+CreateModPackage 11 large
+Halo 3: Campaign
+THE STUNNING CONCLUSION TO THE HALO TRILOGY. The Covenant controls Earth, the all-consuming Flood is unleashed and the fate of the galaxy hangs in the balance. An ancient secret, buried under the sands of Africa for untold millennia may hold the key to our salvation or our doom. Spartan-117, the Master Chief, a biologically augmented super-solider, must uncover that secret and stop the forces that threaten us once and for all. He is the last of his kind, a warrior born for combat, bred for war... and humanity's only hope. 
+dank
+1.1
+campaign
+005_intro
+010_jungle
+020_base
+030_outskirts
+040_voi
+050_floodvoi
+070_waste 
+100_citadel
+110_hc
+120_halo
+130_epilogue 
+
+generatecampaignfile "360CampaignMaps\Info"
+
+	#005 intro
+opencachefile "360CampaignMaps\005_intro.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 1
+
+	echo 010 jungle
+	
+opencachefile "360CampaignMaps\010_jungle.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 2
+
+		echo 020 base
+
+opencachefile "360CampaignMaps\020_base.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 3
+
+		echo 030 outskirts
+		
+opencachefile "360CampaignMaps\030_outskirts.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 4
+
+		echo 40_voi
+		
+opencachefile "360CampaignMaps\040_voi.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 5
+
+		echo 050 floodvoi
+		
+opencachefile "360CampaignMaps\050_floodvoi.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 6
+
+		echo 070_waste
+		
+opencachefile "360CampaignMaps\070_waste.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 7
+
+		echo 100_citadel
+		
+opencachefile "360CampaignMaps\100_citadel.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 8
+
+		echo 110_hc.map
+		
+opencachefile "360CampaignMaps\110_hc.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 9
+
+		echo 120_halo.map
+		
+opencachefile "360CampaignMaps\120_halo.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+switchtagcache 10
+
+		echo 130_epilogue
+		
+opencachefile "360CampaignMaps\130_epilogue.map"
+porttag *.scnr
+exit
+
+edittag *.scnr
+SetField Flags H3Compatibility
+savetagchanges
+exit
+
+updatemapfiles "360CampaignMaps\Info"
+
+echo Addons
+
+switchtagcache 0
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\005_intro\005_intro.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 1
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\010_jungle\010_jungle.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+
+switchtagcache 2
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\020_base\020_base.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 3
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\030_outskirts\030_outskirts.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 4
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\040_voi\040_voi.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 5
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\050_floodvoi\050_floodvoi.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 6
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\070_waste\070_waste.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 7
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\100_citadel\100_citadel.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 8
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\110_hc\110_hc.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 9
+
+echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
+
+echo customization in cutscenes
+edittag levels\solo\120_halo\120_halo.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+switchtagcache 10 
+
+echo Halo3AIO
+
+echo customization in cutscenes
+edittag levels\solo\130_epilogue\130_epilogue.scenario
+addblockelements CampaignPlayers
+setfield CampaignPlayers[0].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[1].PlayerRepresentationName dervish
+addblockelements CampaignPlayers
+setfield CampaignPlayers[2].PlayerRepresentationName masterchief
+addblockelements CampaignPlayers
+setfield CampaignPlayers[3].PlayerRepresentationName masterchief
+savetagchanges
+exit
+cs < UpdateCISCRepresentation.cs
+
+
+AddModFiles "WorkingDir\modfiles"
+savemodpackage H3Campaign.pak
+
+
+
+
+
+

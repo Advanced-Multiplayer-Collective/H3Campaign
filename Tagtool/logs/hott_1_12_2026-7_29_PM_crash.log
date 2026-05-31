@@ -1,0 +1,53 @@
+TagTool [1.5.9487.41726 (Built 12/22/2025 11:11:32 PM UTC)]
+
+Please report any bugs and/or feature requests:
+https://github.com/MtnDewIt/TagTool-NET-Test/issues
+
+Enter the path to a Halo cache file (.map/.dat):
+> D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+
+Enter "help" to list available commands. Enter "quit" to quit.
+
+tags> SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
+Variable "modsfolder" set to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods".
+
+tags> SetVariable h2maps "E:\Halo Resources\Halo2V"
+Variable "h2maps" set to "E:\Halo Resources\Halo2V".
+
+tags> SetVariable h3maps "E:\Halo Resources\Halo3"
+Variable "h3maps" set to "E:\Halo Resources\Halo3".
+
+tags> SetVariable h3mythicmaps "E:\Halo Resources\Halo3mythic"
+Variable "h3mythicmaps" set to "E:\Halo Resources\Halo3mythic".
+
+tags> SetVariable odstmaps "E:\Halo Resources\Halo3odst"
+Variable "odstmaps" set to "E:\Halo Resources\Halo3odst".
+
+tags> SetVariable h3mccmaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+Variable "h3mccmaps" set to "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps".
+
+tags> SetVariable workshop "D:\Games\steamapps\workshop\content\976730\2962955878"
+Variable "workshop" set to "D:\Games\steamapps\workshop\content\976730\2962955878".
+
+tags> SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\H2AMP"
+Variable "workingdir" set to "C:\Users\Matthew\Documents\GitHub\H2AMP".
+
+tags> 
+
+tags> openmodpackage h2amp
+Initializing cache...
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> AddSkyBox "Ascension" scenarios\multi\ascension\ascension
+[ERROR]: System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at TagTool.Commands.Forge.AddSkyBoxCommand.Execute(List`1 args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Forge\AddSkyBoxCommands.cs:line 83
+   at TagTool.Commands.Common.CommandRunner.ExecuteCommand(CommandContext context, List`1 commandAndArgs, Dictionary`2 argVariables) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 159
+   at TagTool.Commands.Common.CommandRunner.RunCommand(String commandLine, Boolean printInput, Boolean printOutput) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 128
+   at TagTool.Commands.Program.RunCommandLoop(CommandRunner commandRunner, CommandContextStack contextStack) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 128
+   at TagTool.Commands.Program.MainCore(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 112
+   at TagTool.Commands.Program.Main(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 44

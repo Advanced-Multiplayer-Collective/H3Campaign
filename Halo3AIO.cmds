@@ -1,0 +1,979 @@
+
+
+		ECHO ASSAULT RIFLE
+		
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\assault_rifle\assault_rifle.render_model
+porttag replace objects\weapons\lod\lod_assault_rifle\lod_assault_rifle.render_model
+porttag replace objects\weapons\rifle\assault_rifle\fx\firing.effect
+porttag replace objects\weapons\rifle\assault_rifle\fx\flashlight.effect
+porttag replace objects\weapons\rifle\assault_rifle\fx\projectile.effect
+exit
+
+edittag objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.1010085 -0.002260342 0.01560136
+setfield MarkerGroups[1].Markers[0].Rotation -0.6241202 0.1670771 -0.45504 0.6127788
+savetagchanges
+exit
+
+
+	ECHO MAGNUM
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\pistol\magnum\fp_magnum\fp_magnum.render_model
+porttag replace objects\weapons\pistol\magnum\magnum.render_model
+porttag replace objects\weapons\lod\lod_magnum\lod_magnum.render_model
+porttag replace objects\weapons\pistol\magnum\fx\firing.effect
+porttag replace objects\weapons\pistol\magnum\fx\impact.effect
+porttag replace objects\weapons\pistol\magnum\fx\impact_liquid.effect
+porttag replace objects\weapons\pistol\magnum\fx\impact_soft.effect
+exit
+
+edittag objects\weapons\pistol\magnum\fp_magnum\fp_magnum.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.003737968 -0.002770302 -0.03149237
+setfield MarkerGroups[1].Markers[0].Rotation -0.4730325 -0.02672034 -0.3264062 0.8179152
+savetagchanges
+exit
+
+
+	ECHO BATTLE RIFLE
+	
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+porttag replace objects\weapons\rifle\battle_rifle\battle_rifle.render_model
+porttag replace objects\weapons\lod\lod_battle_rifle\lod_battle_rifle.render_model
+porttag replace objects\weapons\rifle\battle_rifle\fx\firing.effect
+porttag replace objects\weapons\rifle\battle_rifle\fx\empty.effect
+porttag replace objects\weapons\rifle\battle_rifle\fx\impact.effect
+porttag replace objects\weapons\rifle\battle_rifle\fx\impact_liquid.effect
+porttag replace objects\weapons\rifle\battle_rifle\fx\impact_soft.effect
+porttag replace objects\weapons\rifle\battle_rifle\fx\projectile.effect
+exit
+
+edittag objects\weapons\rifle\battle_rifle\fp_battle_rifle\fp_battle_rifle.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.1009767 -0.003126469 0.01598142
+setfield MarkerGroups[1].Markers[0].Rotation -0.6101443 0.1782749 -0.4519773 0.6258264
+savetagchanges
+exit
+
+
+	ECHO SNIPER RIFLE
+	
+opencachefile "360CampaignMaps\sandbox.map"
+donotreplacegroups jmad
+porttag replace objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.render_model
+porttag replace objects\weapons\rifle\sniper_rifle\sniper_rifle.render_model
+porttag replace objects\weapons\lod\lod_sniper_rifle\lod_sniper_rifle.render_model
+porttag replace objects\weapons\rifle\sniper_rifle\fx\firing.effect
+porttag replace objects\weapons\rifle\sniper_rifle\fx\impact.effect
+porttag replace objects\weapons\rifle\sniper_rifle\fx\impact_liquid.effect
+porttag replace objects\weapons\rifle\sniper_rifle\fx\impact_soft.effect
+porttag replace objects\weapons\rifle\sniper_rifle\fx\projectile.effect
+exit
+
+edittag objects\weapons\rifle\sniper_rifle\fp_sniper_rifle\fp_sniper_rifle.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.06916446 -0.003040792 -0.02955528
+setfield MarkerGroups[1].Markers[0].Rotation -0.6945807 0.150886 -0.3370411 0.6174093
+savetagchanges
+exit
+
+
+	ECHO SHOTGUN
+	
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.render_model
+porttag replace objects\weapons\rifle\shotgun\shotgun.render_model
+porttag replace objects\weapons\lod\lod_shotgun\lod_shotgun.render_model
+porttag replace objects\weapons\rifle\shotgun\fx\firing.effect
+porttag replace objects\weapons\rifle\shotgun\fx\flashlight.effect
+porttag replace objects\weapons\rifle\shotgun\fx\impact.effect
+porttag replace objects\weapons\rifle\shotgun\fx\impact_liquid.effect
+porttag replace objects\weapons\rifle\shotgun\fx\misfire.effect
+exit
+
+edittag objects\weapons\rifle\shotgun\fp_shotgun\fp_shotgun.render_model
+setfield MarkerGroups[1].Markers[0].Translation -0.009387273 0.00139097 -0.01766691
+setfield MarkerGroups[1].Markers[0].Rotation -0.6016486 0.09437592 -0.3454929 0.7139655
+savetagchanges
+exit
+
+
+	ECHO SMG
+	
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+porttag replace objects\weapons\rifle\smg\smg.render_model
+porttag replace objects\weapons\lod\lod_smg\lod_smg.render_model
+porttag replace objects\weapons\rifle\smg\fx\firing.effect
+porttag replace objects\weapons\rifle\smg\fx\impact.effect
+porttag replace objects\weapons\rifle\smg\fx\impact_liquid.effect
+porttag replace objects\weapons\rifle\smg\fx\impact_soft.effect
+exit
+
+edittag objects\weapons\rifle\smg\fp_smg\fp_smg.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.02528594 0.0007149399 -0.0143986
+setfield MarkerGroups[1].Markers[0].Rotation -0.0302306 -0.1243806 -0.2744221 0.953052
+savetagchanges
+exit
+
+
+	ECHO PLASMA PISTOL
+	
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.render_model
+porttag replace objects\weapons\pistol\plasma_pistol\plasma_pistol.render_model
+porttag replace objects\weapons\lod\lod_plasma_pistol\lod_plasma_pistol.render_model
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charged\firing.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charged\impact.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charged\impact_liquid.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charged\projectile.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\charging.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\firing.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\impact.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\impact_liquid.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\overheated.effect
+porttag replace objects\weapons\pistol\plasma_pistol\fx\projectile.effect
+porttag replace sound\weapons\plasma_pistol\dryfire.effect
+exit
+
+edittag objects\weapons\pistol\plasma_pistol\fp_plasma_pistol\fp_plasma_pistol.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.0506632 0.01355876 0.01076354
+setfield MarkerGroups[1].Markers[0].Rotation -1.62E-08 -5.980001E-08 0.7071069 0.7071068
+savetagchanges
+exit
+
+	ECHO PLASMA RIFLE
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.render_model
+porttag replace objects\weapons\rifle\plasma_rifle\plasma_rifle.render_model
+porttag replace objects\weapons\lod\lod_plasma_rifle\lod_plasma_rifle.render_model
+porttag replace objects\weapons\rifle\plasma_rifle\fx\firing.effect
+porttag replace objects\weapons\rifle\plasma_rifle\fx\fizzle.effect
+porttag replace objects\weapons\rifle\plasma_rifle\fx\impact.effect
+porttag replace objects\weapons\rifle\plasma_rifle\fx\overheated.effect
+porttag replace objects\weapons\rifle\plasma_rifle\fx\projectile.effect
+exit
+
+edittag objects\weapons\rifle\plasma_rifle\fp_plasma_rifle\fp_plasma_rifle.render_model
+setfield MarkerGroups[1].Markers[0].Translation -0.01217244 0.02 0.03981839
+setfield MarkerGroups[1].Markers[0].Rotation -1.06E-08 1.06E-08 0.7071068 0.7071068
+savetagchanges
+exit
+
+
+	ECHO CARBINE
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+porttag replace objects\weapons\rifle\covenant_carbine\covenant_carbine.render_model
+porttag replace objects\weapons\lod\lod_carbine\lod_carbine.render_model
+porttag replace objects\weapons\rifle\covenant_carbine\fx\carbine_misfire.effect
+porttag replace objects\weapons\rifle\covenant_carbine\fx\firing.effect
+porttag replace objects\weapons\rifle\covenant_carbine\fx\impact.effect
+porttag replace objects\weapons\rifle\covenant_carbine\fx\projectile.effect
+porttag replace objects\weapons\rifle\covenant_carbine\fx\reloading.effect
+exit
+
+edittag objects\weapons\rifle\covenant_carbine\fp_covenant_carbine\fp_covenant_carbine.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.01435027 -0.002966242 -0.03943556
+setfield MarkerGroups[1].Markers[0].Rotation -0.5890878 0.1469777 -0.4838951 0.630253
+savetagchanges
+exit
+
+
+
+	ECHO BRUTE SHOT
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.render_model
+porttag replace objects\weapons\support_low\brute_shot\brute_shot.render_model
+porttag replace objects\weapons\lod\lod_brute_shot\lod_brute_shot.render_model
+porttag replace objects\weapons\support_low\brute_shot\fx\airborne_detonation.effect
+porttag replace objects\weapons\support_low\brute_shot\fx\detonation.effect
+porttag replace objects\weapons\support_low\brute_shot\fx\firing.effect
+porttag replace objects\weapons\support_low\brute_shot\fx\projectile.effect
+exit
+
+edittag objects\weapons\support_low\brute_shot\fp_brute_shot\fp_brute_shot.render_model
+setfield MarkerGroups[0].Markers[0].Translation 0.0322919 0.01706448 0.0525696
+setfield MarkerGroups[0].Markers[0].Rotation 0.4885519 -0.002291647 -0.2378302 0.8394931
+savetagchanges
+exit
+
+	ECHO SPIKER
+	
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.render_model
+porttag replace objects\weapons\rifle\spike_rifle\spike_rifle.render_model
+porttag replace objects\weapons\lod\lod_spike_rifle\lod_spike_rifle.render_model
+porttag replace objects\weapons\rifle\spike_rifle\fx\firing.effect
+porttag replace objects\weapons\rifle\spike_rifle\fx\impact.effect
+porttag replace objects\weapons\rifle\spike_rifle\fx\object_impact.effect
+porttag replace objects\weapons\rifle\spike_rifle\fx\projectile.effect
+porttag replace objects\weapons\rifle\spike_rifle\fx\reload.effect
+exit
+
+edittag objects\weapons\rifle\spike_rifle\fp_spike_rifle\fp_spike_rifle.render_model
+setfield MarkerGroups[2].Markers[0].Translation 0.02284988 -0.02398125 0.002580142
+setfield MarkerGroups[2].Markers[0].Rotation -0.4233879 0.1495626 0.8858865 0.116529
+savetagchanges
+exit
+
+	ECHO ROCKET LAUNCHER
+	
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.render_model
+porttag replace objects\weapons\support_high\rocket_launcher\rocket_launcher.render_model
+porttag replace objects\weapons\lod\lod_rocket_launcher\lod_rocket_launcher.render_model
+exit
+
+edittag objects\weapons\support_high\rocket_launcher\fp_rocket_launcher\fp_rocket_launcher.render_model
+setfield MarkerGroups[1].Markers[0].Translation 0.24 0.02 -0.02876854
+setfield MarkerGroups[1].Markers[0].Rotation 0.388786 -0.1373109 -0.01908897 0.9108385
+savetagchanges
+exit
+
+	ECHO BEAM RIFLE
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.render_model
+porttag replace objects\weapons\rifle\beam_rifle\beam_rifle.render_model
+porttag replace objects\weapons\lod\lod_beam_rifle\lod_beam_rifle.render_model
+porttag replace objects\weapons\support_high\rocket_launcher\fx\detonation.effect
+porttag replace objects\weapons\support_high\rocket_launcher\fx\firing.effect
+porttag replace objects\weapons\support_high\rocket_launcher\fx\projectile.effect
+exit
+
+edittag objects\weapons\rifle\beam_rifle\fp_beam_rifle\fp_beam_rifle.render_model
+setfield MarkerGroups[4].Markers[0].Translation -0.06925948 0.002089635 -0.04879375
+setfield MarkerGroups[4].Markers[0].Rotation -0.5548692 0.4255136 -0.4678792 0.5405067
+savetagchanges
+exit
+
+	ECHO NEEDLER
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\pistol\needler\fp_needler\fp_needler.render_model
+porttag replace objects\weapons\pistol\needler\needler.render_model
+porttag replace objects\weapons\lod\lod_needler\lod_needler.render_model
+porttag replace objects\weapons\pistol\needler\fx\airborne_detonation.effect
+porttag replace objects\weapons\pistol\needler\fx\bounce.effect
+porttag replace objects\weapons\pistol\needler\fx\detonation.effect
+porttag replace objects\weapons\pistol\needler\fx\firing.effect
+porttag replace objects\weapons\pistol\needler\fx\fizzle.effect
+porttag replace objects\weapons\pistol\needler\fx\impact.effect
+porttag replace objects\weapons\pistol\needler\fx\projectile.effect
+porttag replace objects\weapons\pistol\needler\fx\super_detonation.effect
+porttag replace sound\weapons\needler\dryfire.effect
+exit
+
+edittag objects\weapons\pistol\needler\fp_needler\fp_needler.render_model
+setfield MarkerGroups[2].Markers[0].Translation 0.006987934 0.000949643 -0.05353097
+setfield MarkerGroups[2].Markers[0].Rotation -0.4737895 0.2369957 -0.236659 0.8144625
+savetagchanges
+exit
+
+	ECHO SPARTAN LASER
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.render_model
+porttag replace objects\weapons\support_high\spartan_laser\spartan_laser.render_model
+porttag replace objects\weapons\lod\lod_spartan_laser\lod_spartan_laser.render_model
+porttag replace objects\weapons\support_high\spartan_laser\fx\charging.effect
+porttag replace objects\weapons\support_high\spartan_laser\fx\firing.effect
+porttag replace objects\weapons\support_high\spartan_laser\fx\firing_tracer.effect
+porttag replace objects\weapons\support_high\spartan_laser\fx\impact.effect
+porttag replace objects\weapons\support_high\spartan_laser\fx\tracer_impact.effect
+exit
+
+edittag objects\weapons\support_high\spartan_laser\fp_spartan_laser\fp_spartan_laser.render_model
+setfield MarkerGroups[2].Markers[0].Translation 0.2079436 0.0006277269 -0.01954013
+setfield MarkerGroups[2].Markers[0].Rotation -0.03072807 -0.1606562 -0.01475596 0.9864216
+savetagchanges
+exit
+
+	ECHO FUEL ROD
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.render_model
+porttag replace objects\weapons\support_high\flak_cannon\flak_cannon.render_model
+porttag replace objects\weapons\lod\lod_flak_cannon\lod_flak_cannon.render_model
+porttag replace objects\weapons\support_high\flak_cannon\fx\detonation.effect
+porttag replace objects\weapons\support_high\flak_cannon\fx\firing.effect
+porttag replace objects\weapons\support_high\flak_cannon\fx\projectile.effect
+exit
+
+edittag objects\weapons\support_high\flak_cannon\fp_flak_cannon\fp_flak_cannon.render_model
+setfield MarkerGroups[2].Markers[0].Translation 0.1457545 0.01229 -0.0569
+setfield MarkerGroups[2].Markers[0].Rotation 0.1845376 0.08574617 -0.1157519 0.9722115
+savetagchanges
+exit
+
+	ECHO GRAVITY HAMMER
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.render_model
+porttag replace objects\weapons\melee\gravity_hammer\gravity_hammer.render_model
+porttag replace objects\weapons\lod\lod_gravity_hammer\lod_gravity_hammer.render_model
+porttag replace objects\weapons\melee\gravity_hammer\fx\fp_gravity_hammer_impact.effect
+porttag replace objects\weapons\melee\gravity_hammer\fx\gravity_hammer_impact.effect
+porttag replace objects\weapons\melee\gravity_hammer\fx\hammer_on.effect
+exit
+
+edittag objects\weapons\melee\gravity_hammer\fp_gravity_hammer\fp_gravity_hammer.render_model
+setfield MarkerGroups[3].Markers[0].Translation 0.003669442 0.02786983 -0.1352508
+setfield MarkerGroups[3].Markers[0].Rotation 0.1227878 -0.1227878 -0.6963643 0.6963643
+savetagchanges
+exit
+
+	ECHO ENERGY SWORD
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\melee\energy_blade\fp_energy_blade\fp_energy_blade.render_model
+exit
+
+echo MACHINE GUN TURRET
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_weapon\machinegun_turret_weapon.model
+porttag replace objects\weapons\turret\machinegun_turret\machinegun_turret_vehicle\machinegun_turret_vehicle.model
+exit
+
+echo grenades
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\grenade\frag_grenade\frag_grenade.model
+porttag replace objects\weapons\grenade\frag_grenade\frag_grenade_equipment.model
+porttag replace objects\weapons\grenade\plasma_grenade\plasma_grenade.model
+porttag replace objects\weapons\grenade\plasma_grenade\plasma_grenade_equipment.model
+exit
+
+echo Radar Jammer
+
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\equipment\jammer_equipment\jammer_equipment.equipment
+Exit
+
+echo invisibility
+
+opencachefile "360CampaignMaps\100_citadel.map"
+porttag replace objects\equipment\invisibility_equipment\invisibility_equipment.equipment
+Exit
+
+		echo Vehicles
+		
+opencachefile "360CampaignMaps\sandbox.map"
+porttag replace regex .*warthog.*.mode
+porttag replace regex .*mongoose.*.mode
+porttag replace regex .*hornet.*.mode
+porttag replace regex .*banshee.*.mode
+porttag replace regex .*brute_chopper.*.mode
+porttag replace regex .*ghost.*.mode
+porttag replace regex .*wraith.*.mode
+porttag replace regex .*scorpion.*.mode
+exit
+
+
+	echo hud
+
+opencachefile "MCCCampaignMaps\sandbox.map"
+porttag replace ui\chud\assault_rifle.chud_definition
+porttag replace ui\chud\battle_rifle.chud_definition
+porttag replace ui\chud\beam_rifle.chud_definition
+porttag replace ui\chud\brute_shot.chud_definition
+porttag replace ui\chud\e_bubbleshield.chud_definition
+porttag replace ui\chud\e_flare.chud_definition
+porttag replace ui\chud\e_gravlift.chud_definition
+porttag replace ui\chud\e_instacover.chud_definition
+porttag replace ui\chud\e_jammer.chud_definition
+porttag replace ui\chud\e_powerdrain.chud_definition
+porttag replace ui\chud\e_regen.chud_definition
+porttag replace ui\chud\e_tripmine.chud_definition
+porttag replace ui\chud\elite.chud_definition
+porttag replace ui\chud\hammer.chud_definition
+porttag replace ui\chud\machinegun_turret.chud_definition
+porttag replace ui\chud\magnum.chud_definition
+porttag replace ui\chud\metagame_scoreboard.chud_definition
+porttag replace ui\chud\missile.chud_definition
+porttag replace ui\chud\monitor.chud_definition
+porttag replace ui\chud\needler.chud_definition
+porttag replace ui\chud\plasma_pistol.chud_definition
+porttag replace ui\chud\rocket.chud_definition
+porttag replace ui\chud\sandbox.chud_definition
+porttag replace ui\chud\scoreboard.chud_definition
+porttag replace ui\chud\sentinel_beam.chud_definition
+porttag replace ui\chud\shotgun.chud_definition
+porttag replace ui\chud\smg.chud_definition
+porttag replace ui\chud\sniper_rifle.chud_definition
+porttag replace ui\chud\spartan.chud_definition
+porttag replace ui\chud\spartan_laser.chud_definition
+porttag replace ui\chud\spike_rifle.chud_definition
+porttag replace ui\chud\sword.chud_definition
+porttag replace ui\chud\t_machinegun.chud_definition
+porttag replace ui\chud\unarmed.chud_definition
+porttag replace ui\chud\v_banshee.chud_definition
+porttag replace ui\chud\v_chaingun.chud_definition
+porttag replace ui\chud\v_chopper.chud_definition
+porttag replace ui\chud\v_driver.chud_definition
+porttag replace ui\chud\v_gaussturret.chud_definition
+porttag replace ui\chud\v_ghost.chud_definition
+porttag replace ui\chud\v_hornet.chud_definition
+porttag replace ui\chud\v_mongoose.chud_definition
+porttag replace ui\chud\v_scorpion.chud_definition
+porttag replace ui\chud\v_scorpionturret.chud_definition
+porttag replace ui\chud\v_wraith.chud_definition
+porttag replace ui\chud\v_wraith_anti_air.chud_definition
+porttag replace ui\chud\v_wraithturret.chud_definition
+porttag replace ui\chud\plasma_rifle.chud_definition
+porttag replace ui\chud\fuel_rod_cannon.chud_definition
+porttag replace ui\chud\flamethrower.chud_definition
+porttag replace ui\chud\carbine.chud_definition
+porttag replace ui\chud\excavator.chud_definition
+porttag replace ui\chud\plasma_turret.chud_definition
+porttag replace ui\chud\t_plasmaturret.chud_definition
+exit
+	
+#echo Grenades
+edittag ui\chud\spartan.chud_definition
+setfield HudWidgets[4].PlacementData[0].Offset -18 -12
+setfield HudWidgets[5].PlacementData[0].Offset 5 -12
+setfield HudWidgets[6].PlacementData[0].Offset 25 -12
+setfield HudWidgets[7].PlacementData[0].Offset 45 -12
+setfield HudWidgets[5].BitmapWidgets[1].AnimationData[0].Flashing.Animation null
+setfield HudWidgets[5].BitmapWidgets[0].AnimationData[0].Flashing.Animation null
+setfield HudWidgets[5].TextWidgets[0].AnimationData[0].Flashing.Animation null
+savetagchanges
+exit
+
+#echo radar blips
+edittag ui\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 82.8 993
+savetagchanges
+exit
+
+opencachefile "MCCCampaignMaps\sandbox.map"
+porttag replace ui\chud\bitmaps\sensor_blips.bitmap
+exit
+
+EditTag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].BlipRadius 3.75
+savetagchanges
+exit
+
+#echo bottom of hud fix
+
+Edittag ui\chud\spartan.chud_definition
+SetField HudWidgets[2].BitmapWidgets[1].PlacementData[0].Origin 1 1
+savetagchanges
+exit
+
+edittag objects\characters\elite\mp_elite\chud\globals.chud_globals_definition
+setfield HudGlobals[0].HudAttributes[0].MotionSensorOrigin 82.8 993
+savetagchanges
+exit
+
+#echo elite hud grenade placement
+Edittag ui\chud\elite.chud_definition
+SetField HudWidgets[4].PlacementData[0].Offset 7 -12
+SetField HudWidgets[5].PlacementData[0].Offset 35 -12
+SetField HudWidgets[6].PlacementData[0].Offset 63 -12
+savetagchanges
+exit
+
+#echo Random object replacements
+
+opencachefile "360CampaignMaps\020_base.map"
+porttag replace objects\gear\human\military\crate_packing\crate_packing.crate
+Exit
+
+opencachefile "360CampaignMaps\020_base.map"
+porttag replace objects\gear\human\military\crate_packing_giant\crate_packing_giant.crate
+Exit
+
+#echo fix elite beam rifle anims
+
+opencachefile "360CampaignMaps\070_waste.map"
+porttag replace objects\characters\dervish\fp\weapons\rifle\fp_beam_rifle\fp_beam_rifle.model_animation_graph
+Exit
+
+#echo fix shield effect on covenant
+
+EditTag globals\rasterizer_globals.rasterizer_globals
+SetField DefaultShieldImpact null
+savetagchanges
+exit
+
+#echo font package
+
+importfonts "WorkingDir\h3fonts.bin"
+rescalehudtext 0.45
+
+
+#echo hud equipment schematics
+
+edittag ui\chud\spartan.chud_definition
+removeblockelements HudWidgets 22 1
+savetagchanges
+exit
+
+edittag ui\chud\spartan.chud_definition
+addblockelements HudWidgets 1 1
+editblock HudWidgets 22
+stringid add consumable1
+stringid add cons_icon
+stringid add consumable1_activation
+SetField Name consumable1
+SetField ScriptingClass Consumable
+SetField BaseFlags None
+SetField SortLayer Foreground
+AddBlockElements StateData 1
+SetField StateData[0].GameState None
+SetField StateData[0].SkinState None
+SetField StateData[0].GameTeam None
+SetField StateData[0].WindowState None
+SetField StateData[0].MultiplayerEvents None
+SetField StateData[0].UnitBaseFlags None
+SetField StateData[0].EditorFlags None
+SetField StateData[0].HindsightState None
+SetField StateData[0].SkullFlags None
+SetField StateData[0].SurvivalRoundFlags None
+SetField StateData[0].SurvivalWaveFlags None
+SetField StateData[0].SurvivalLivesFlags None
+SetField StateData[0].SurvivalDifficultyFlags None
+SetField StateData[0].GeneralKudosFlags None
+SetField StateData[0].UnitZoomFlags None
+SetField StateData[0].UnitInventoryFlags 0
+SetField StateData[0].Unused3 0
+SetField StateData[0].UnitGeneralFlags None
+SetField StateData[0].Unused4 0
+SetField StateData[0].WeaponKudosFlags None
+SetField StateData[0].WeaponStatusFlags None
+SetField StateData[0].WeaponTargetFlags None
+SetField StateData[0].WeaponTargetBFlags None
+SetField StateData[0].Player_SpecialFlags None
+SetField StateData[0].Weapon_SpecialFlags None
+SetField StateData[0].InverseFlags NotZoomedIn
+SetField StateData[0].UnusedFlags4 0
+SetField StateData[0].ConsumableFlags None
+SetField StateData[0].EnergyMeterFlags None
+AddBlockElements PlacementData 1
+SetField PlacementData[0].Anchor Equipment
+SetField PlacementData[0].AnchorFlags 0
+SetField PlacementData[0].Origin 0 0
+SetField PlacementData[0].Offset 20 -43
+SetField PlacementData[0].Scale 0.75 0.75
+SetField ParallaxData ui\chud\parallax\weapons.chud_widget_parallax_data
+AddBlockElements BitmapWidgets 2
+SetField BitmapWidgets[0].Name cons_icon
+SetField BitmapWidgets[0].ScriptingClass UseParent
+SetField BitmapWidgets[0].BaseFlags None
+SetField BitmapWidgets[0].SortLayer Foreground
+AddBlockElements BitmapWidgets[0].StateData 1
+SetField BitmapWidgets[0].StateData[0].GameState None
+SetField BitmapWidgets[0].StateData[0].SkinState None
+SetField BitmapWidgets[0].StateData[0].GameTeam None
+SetField BitmapWidgets[0].StateData[0].WindowState None
+SetField BitmapWidgets[0].StateData[0].MultiplayerEvents None
+SetField BitmapWidgets[0].StateData[0].UnitBaseFlags None
+SetField BitmapWidgets[0].StateData[0].EditorFlags None
+SetField BitmapWidgets[0].StateData[0].HindsightState None
+SetField BitmapWidgets[0].StateData[0].SkullFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalRoundFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalWaveFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalLivesFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalDifficultyFlags None
+SetField BitmapWidgets[0].StateData[0].GeneralKudosFlags None
+SetField BitmapWidgets[0].StateData[0].UnitZoomFlags None
+SetField BitmapWidgets[0].StateData[0].UnitInventoryFlags 0
+SetField BitmapWidgets[0].StateData[0].Unused3 0
+SetField BitmapWidgets[0].StateData[0].UnitGeneralFlags None
+SetField BitmapWidgets[0].StateData[0].Unused4 0
+SetField BitmapWidgets[0].StateData[0].WeaponKudosFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponStatusFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetBFlags None
+SetField BitmapWidgets[0].StateData[0].Player_SpecialFlags None
+SetField BitmapWidgets[0].StateData[0].Weapon_SpecialFlags None
+SetField BitmapWidgets[0].StateData[0].InverseFlags None
+SetField BitmapWidgets[0].StateData[0].UnusedFlags4 0
+SetField BitmapWidgets[0].StateData[0].ConsumableFlags Consumable1Available
+SetField BitmapWidgets[0].StateData[0].EnergyMeterFlags None
+AddBlockElements BitmapWidgets[0].PlacementData 1
+SetField BitmapWidgets[0].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[0].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[0].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[0].PlacementData[0].Offset 20 120
+SetField BitmapWidgets[0].PlacementData[0].Scale 1.4 1.4
+AddBlockElements BitmapWidgets[0].AnimationData 1
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Initializing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Initializing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Active.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Active.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\equipment_kablam.chud_animation_definition
+SetField BitmapWidgets[0].AnimationData[0].Active.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Flashing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Readying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Readying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Impulse.StateUnknown 0
+AddBlockElements BitmapWidgets[0].RenderData 1
+SetField BitmapWidgets[0].RenderData[0].ShaderType Simple
+SetField BitmapWidgets[0].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[0].RenderData[0].ExternalInput UnknownX51
+SetField BitmapWidgets[0].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarB 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarC 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[0].RenderData[0].OutputColorA HighlightForeground
+SetField BitmapWidgets[0].RenderData[0].OutputColorB LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorC LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputScalarA RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarB RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarC RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarD RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarE RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarF RangeInput
+SetField BitmapWidgets[0].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[0].RuntimeWidgetIndex 90
+SetField BitmapWidgets[0].Flags SpriteFromConsumable
+SetField BitmapWidgets[0].Bitmap ui\chud\bitmaps\consumable_scematics.bitmap
+SetField BitmapWidgets[0].BitmapSequenceIndex 0
+SetField BitmapWidgets[1].Name consumable1_activation
+SetField BitmapWidgets[1].ScriptingClass UseParent
+SetField BitmapWidgets[1].BaseFlags None
+SetField BitmapWidgets[1].SortLayer Background
+AddBlockElements BitmapWidgets[1].StateData 1
+SetField BitmapWidgets[1].StateData[0].GameState None
+SetField BitmapWidgets[1].StateData[0].SkinState None
+SetField BitmapWidgets[1].StateData[0].GameTeam None
+SetField BitmapWidgets[1].StateData[0].WindowState None
+SetField BitmapWidgets[1].StateData[0].MultiplayerEvents None
+SetField BitmapWidgets[1].StateData[0].UnitBaseFlags None
+SetField BitmapWidgets[1].StateData[0].EditorFlags None
+SetField BitmapWidgets[1].StateData[0].HindsightState None
+SetField BitmapWidgets[1].StateData[0].SkullFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalRoundFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalWaveFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalLivesFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalDifficultyFlags None
+SetField BitmapWidgets[1].StateData[0].GeneralKudosFlags None
+SetField BitmapWidgets[1].StateData[0].UnitZoomFlags None
+SetField BitmapWidgets[1].StateData[0].UnitInventoryFlags 0
+SetField BitmapWidgets[1].StateData[0].Unused3 0
+SetField BitmapWidgets[1].StateData[0].UnitGeneralFlags None
+SetField BitmapWidgets[1].StateData[0].Unused4 0
+SetField BitmapWidgets[1].StateData[0].WeaponKudosFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponStatusFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponTargetFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponTargetBFlags None
+SetField BitmapWidgets[1].StateData[0].Player_SpecialFlags None
+SetField BitmapWidgets[1].StateData[0].Weapon_SpecialFlags None
+SetField BitmapWidgets[1].StateData[0].InverseFlags None
+SetField BitmapWidgets[1].StateData[0].UnusedFlags4 0
+SetField BitmapWidgets[1].StateData[0].ConsumableFlags Consumable1Active
+SetField BitmapWidgets[1].StateData[0].EnergyMeterFlags None
+AddBlockElements BitmapWidgets[1].PlacementData 1
+SetField BitmapWidgets[1].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[1].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[1].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[1].PlacementData[0].Offset 200 80
+SetField BitmapWidgets[1].PlacementData[0].Scale -1 -1
+AddBlockElements BitmapWidgets[1].RenderData 1
+SetField BitmapWidgets[1].RenderData[0].ShaderType Meter
+SetField BitmapWidgets[1].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[1].RenderData[0].ExternalInput Consumable1Charge
+SetField BitmapWidgets[1].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[1].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarB 0.75
+SetField BitmapWidgets[1].RenderData[0].LocalScalarC 0.075
+SetField BitmapWidgets[1].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[1].RenderData[0].OutputColorA HighlightForeground
+SetField BitmapWidgets[1].RenderData[0].OutputColorB SecondaryBackground
+SetField BitmapWidgets[1].RenderData[0].OutputColorC HighlightForeground
+SetField BitmapWidgets[1].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarA LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarB LocalB
+SetField BitmapWidgets[1].RenderData[0].OutputScalarC LocalC
+SetField BitmapWidgets[1].RenderData[0].OutputScalarD LocalD
+SetField BitmapWidgets[1].RenderData[0].OutputScalarE Input
+SetField BitmapWidgets[1].RenderData[0].OutputScalarF Input
+SetField BitmapWidgets[1].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[1].RuntimeWidgetIndex 175
+SetField BitmapWidgets[1].Flags None
+SetField BitmapWidgets[1].Bitmap ui\chud\bitmaps\consumable_activation.bitmap
+SetField BitmapWidgets[1].BitmapSequenceIndex 0
+savetagchanges
+exit
+exit
+
+edittag ui\chud\spartan.chud_definition
+SetField HudWidgets[22].BitmapWidgets[0].RuntimeWidgetIndex 127
+SetField HudWidgets[22].BitmapWidgets[1].RuntimeWidgetIndex 128
+SetField HudWidgets[22].BitmapWidgets[2].RuntimeWidgetIndex 129
+SetField HudWidgets[22].BitmapWidgets[0].PlacementData[0].Offset 20 165
+SetField HudWidgets[22].BitmapWidgets[0].PlacementData[0].Scale 1.75 1.75
+RemoveBlockElements HudWidgets[22].TextWidgets 0 1
+savetagchanges
+exit
+
+
+edittag ui\chud\elite.chud_definition
+removeblockelements HudWidgets 19 1
+savetagchanges
+exit
+
+edittag ui\chud\elite.chud_definition
+addblockelements HudWidgets 1 1
+editblock HudWidgets 19
+stringid add consumable1
+stringid add cons_icon
+stringid add consumable1_activation
+SetField Name consumable1
+SetField ScriptingClass Consumable
+SetField BaseFlags None
+SetField SortLayer Foreground
+AddBlockElements StateData 1
+SetField StateData[0].GameState None
+SetField StateData[0].SkinState None
+SetField StateData[0].GameTeam None
+SetField StateData[0].WindowState None
+SetField StateData[0].MultiplayerEvents None
+SetField StateData[0].UnitBaseFlags None
+SetField StateData[0].EditorFlags None
+SetField StateData[0].HindsightState None
+SetField StateData[0].SkullFlags None
+SetField StateData[0].SurvivalRoundFlags None
+SetField StateData[0].SurvivalWaveFlags None
+SetField StateData[0].SurvivalLivesFlags None
+SetField StateData[0].SurvivalDifficultyFlags None
+SetField StateData[0].GeneralKudosFlags None
+SetField StateData[0].UnitZoomFlags None
+SetField StateData[0].UnitInventoryFlags 0
+SetField StateData[0].Unused3 0
+SetField StateData[0].UnitGeneralFlags None
+SetField StateData[0].Unused4 0
+SetField StateData[0].WeaponKudosFlags None
+SetField StateData[0].WeaponStatusFlags None
+SetField StateData[0].WeaponTargetFlags None
+SetField StateData[0].WeaponTargetBFlags None
+SetField StateData[0].Player_SpecialFlags None
+SetField StateData[0].Weapon_SpecialFlags None
+SetField StateData[0].InverseFlags NotZoomedIn
+SetField StateData[0].UnusedFlags4 0
+SetField StateData[0].ConsumableFlags None
+SetField StateData[0].EnergyMeterFlags None
+AddBlockElements PlacementData 1
+SetField PlacementData[0].Anchor Equipment
+SetField PlacementData[0].AnchorFlags 0
+SetField PlacementData[0].Origin 0 0
+SetField PlacementData[0].Offset 20 -43
+SetField PlacementData[0].Scale 0.75 0.75
+SetField ParallaxData ui\chud\parallax\weapons.chud_widget_parallax_data
+AddBlockElements BitmapWidgets 2
+SetField BitmapWidgets[0].Name cons_icon
+SetField BitmapWidgets[0].ScriptingClass UseParent
+SetField BitmapWidgets[0].BaseFlags None
+SetField BitmapWidgets[0].SortLayer Foreground
+AddBlockElements BitmapWidgets[0].StateData 1
+SetField BitmapWidgets[0].StateData[0].GameState None
+SetField BitmapWidgets[0].StateData[0].SkinState None
+SetField BitmapWidgets[0].StateData[0].GameTeam None
+SetField BitmapWidgets[0].StateData[0].WindowState None
+SetField BitmapWidgets[0].StateData[0].MultiplayerEvents None
+SetField BitmapWidgets[0].StateData[0].UnitBaseFlags None
+SetField BitmapWidgets[0].StateData[0].EditorFlags None
+SetField BitmapWidgets[0].StateData[0].HindsightState None
+SetField BitmapWidgets[0].StateData[0].SkullFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalRoundFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalWaveFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalLivesFlags None
+SetField BitmapWidgets[0].StateData[0].SurvivalDifficultyFlags None
+SetField BitmapWidgets[0].StateData[0].GeneralKudosFlags None
+SetField BitmapWidgets[0].StateData[0].UnitZoomFlags None
+SetField BitmapWidgets[0].StateData[0].UnitInventoryFlags 0
+SetField BitmapWidgets[0].StateData[0].Unused3 0
+SetField BitmapWidgets[0].StateData[0].UnitGeneralFlags None
+SetField BitmapWidgets[0].StateData[0].Unused4 0
+SetField BitmapWidgets[0].StateData[0].WeaponKudosFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponStatusFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetFlags None
+SetField BitmapWidgets[0].StateData[0].WeaponTargetBFlags None
+SetField BitmapWidgets[0].StateData[0].Player_SpecialFlags None
+SetField BitmapWidgets[0].StateData[0].Weapon_SpecialFlags None
+SetField BitmapWidgets[0].StateData[0].InverseFlags None
+SetField BitmapWidgets[0].StateData[0].UnusedFlags4 0
+SetField BitmapWidgets[0].StateData[0].ConsumableFlags Consumable1Available
+SetField BitmapWidgets[0].StateData[0].EnergyMeterFlags None
+AddBlockElements BitmapWidgets[0].PlacementData 1
+SetField BitmapWidgets[0].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[0].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[0].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[0].PlacementData[0].Offset 20 120
+SetField BitmapWidgets[0].PlacementData[0].Scale 1.4 1.4
+AddBlockElements BitmapWidgets[0].AnimationData 1
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Initializing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Initializing.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Initializing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Active.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Active.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Active.Animation ui\chud\animations\equipment_kablam.chud_animation_definition
+SetField BitmapWidgets[0].AnimationData[0].Active.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Flashing.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Flashing.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Flashing.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Readying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Readying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Readying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Unreadying.StateUnknown 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Flags 0
+SetField BitmapWidgets[0].AnimationData[0].Impulse.InputType Time
+SetField BitmapWidgets[0].AnimationData[0].Impulse.Animation null
+SetField BitmapWidgets[0].AnimationData[0].Impulse.StateUnknown 0
+AddBlockElements BitmapWidgets[0].RenderData 1
+SetField BitmapWidgets[0].RenderData[0].ShaderType Simple
+SetField BitmapWidgets[0].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[0].RenderData[0].ExternalInput UnknownX51
+SetField BitmapWidgets[0].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[0].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarB 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarC 0
+SetField BitmapWidgets[0].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[0].RenderData[0].OutputColorA HighlightForeground
+SetField BitmapWidgets[0].RenderData[0].OutputColorB LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorC LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[0].RenderData[0].OutputScalarA RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarB RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarC RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarD RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarE RangeInput
+SetField BitmapWidgets[0].RenderData[0].OutputScalarF RangeInput
+SetField BitmapWidgets[0].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[0].RuntimeWidgetIndex 90
+SetField BitmapWidgets[0].Flags SpriteFromConsumable
+SetField BitmapWidgets[0].Bitmap ui\chud\bitmaps\consumable_scematics.bitmap
+SetField BitmapWidgets[0].BitmapSequenceIndex 0
+SetField BitmapWidgets[1].Name consumable1_activation
+SetField BitmapWidgets[1].ScriptingClass UseParent
+SetField BitmapWidgets[1].BaseFlags None
+SetField BitmapWidgets[1].SortLayer Background
+AddBlockElements BitmapWidgets[1].StateData 1
+SetField BitmapWidgets[1].StateData[0].GameState None
+SetField BitmapWidgets[1].StateData[0].SkinState None
+SetField BitmapWidgets[1].StateData[0].GameTeam None
+SetField BitmapWidgets[1].StateData[0].WindowState None
+SetField BitmapWidgets[1].StateData[0].MultiplayerEvents None
+SetField BitmapWidgets[1].StateData[0].UnitBaseFlags None
+SetField BitmapWidgets[1].StateData[0].EditorFlags None
+SetField BitmapWidgets[1].StateData[0].HindsightState None
+SetField BitmapWidgets[1].StateData[0].SkullFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalRoundFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalWaveFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalLivesFlags None
+SetField BitmapWidgets[1].StateData[0].SurvivalDifficultyFlags None
+SetField BitmapWidgets[1].StateData[0].GeneralKudosFlags None
+SetField BitmapWidgets[1].StateData[0].UnitZoomFlags None
+SetField BitmapWidgets[1].StateData[0].UnitInventoryFlags 0
+SetField BitmapWidgets[1].StateData[0].Unused3 0
+SetField BitmapWidgets[1].StateData[0].UnitGeneralFlags None
+SetField BitmapWidgets[1].StateData[0].Unused4 0
+SetField BitmapWidgets[1].StateData[0].WeaponKudosFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponStatusFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponTargetFlags None
+SetField BitmapWidgets[1].StateData[0].WeaponTargetBFlags None
+SetField BitmapWidgets[1].StateData[0].Player_SpecialFlags None
+SetField BitmapWidgets[1].StateData[0].Weapon_SpecialFlags None
+SetField BitmapWidgets[1].StateData[0].InverseFlags None
+SetField BitmapWidgets[1].StateData[0].UnusedFlags4 0
+SetField BitmapWidgets[1].StateData[0].ConsumableFlags Consumable1Active
+SetField BitmapWidgets[1].StateData[0].EnergyMeterFlags None
+AddBlockElements BitmapWidgets[1].PlacementData 1
+SetField BitmapWidgets[1].PlacementData[0].Anchor Parent
+SetField BitmapWidgets[1].PlacementData[0].AnchorFlags 0
+SetField BitmapWidgets[1].PlacementData[0].Origin 0 0
+SetField BitmapWidgets[1].PlacementData[0].Offset 200 80
+SetField BitmapWidgets[1].PlacementData[0].Scale -1 -1
+AddBlockElements BitmapWidgets[1].RenderData 1
+SetField BitmapWidgets[1].RenderData[0].ShaderType Meter
+SetField BitmapWidgets[1].RenderData[0].BlendModeHO AlphaBlend
+SetField BitmapWidgets[1].RenderData[0].ExternalInput Consumable1Charge
+SetField BitmapWidgets[1].RenderData[0].RangeInput Zero
+SetField BitmapWidgets[1].RenderData[0].LocalColorA 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorB 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorC 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalColorD 0 0 0 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarA 0
+SetField BitmapWidgets[1].RenderData[0].LocalScalarB 0.75
+SetField BitmapWidgets[1].RenderData[0].LocalScalarC 0.075
+SetField BitmapWidgets[1].RenderData[0].LocalScalarD 0
+SetField BitmapWidgets[1].RenderData[0].OutputColorA HighlightForeground
+SetField BitmapWidgets[1].RenderData[0].OutputColorB SecondaryBackground
+SetField BitmapWidgets[1].RenderData[0].OutputColorC HighlightForeground
+SetField BitmapWidgets[1].RenderData[0].OutputColorD LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorE LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputColorF LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarA LocalA
+SetField BitmapWidgets[1].RenderData[0].OutputScalarB LocalB
+SetField BitmapWidgets[1].RenderData[0].OutputScalarC LocalC
+SetField BitmapWidgets[1].RenderData[0].OutputScalarD LocalD
+SetField BitmapWidgets[1].RenderData[0].OutputScalarE Input
+SetField BitmapWidgets[1].RenderData[0].OutputScalarF Input
+SetField BitmapWidgets[1].RenderData[0].ScissorRect 0 0 0 0
+SetField BitmapWidgets[1].RuntimeWidgetIndex 175
+SetField BitmapWidgets[1].Flags None
+SetField BitmapWidgets[1].Bitmap ui\chud\bitmaps\consumable_activation.bitmap
+SetField BitmapWidgets[1].BitmapSequenceIndex 0
+savetagchanges
+exit
+exit
+
+edittag ui\chud\elite.chud_definition
+SetField HudWidgets[19].BitmapWidgets[0].RuntimeWidgetIndex 80
+SetField HudWidgets[19].BitmapWidgets[1].RuntimeWidgetIndex 81
+SetField HudWidgets[19].BitmapWidgets[2].RuntimeWidgetIndex 82
+SetField HudWidgets[19].BitmapWidgets[0].PlacementData[0].Offset 20 165
+SetField HudWidgets[19].BitmapWidgets[0].PlacementData[0].Scale 1.75 1.75
+RemoveBlockElements HudWidgets[19].TextWidgets 0 1
+savetagchanges
+exit

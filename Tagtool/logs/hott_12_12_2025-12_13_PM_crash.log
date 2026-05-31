@@ -1,0 +1,361 @@
+TagTool [1.5.9472.12863 (Built 12/7/2025 7:09:22 AM UTC)]
+
+Please report any bugs and/or feature requests:
+https://github.com/MtnDewIt/TagTool-NET-Test/issues
+
+Enter the path to a Halo cache file (.map/.dat):
+> D:\eldewrito\eldewrito 0.7\ElDewrito\maps
+
+Enter "help" to list available commands. Enter "quit" to quit.
+
+tags> SetVariable modsfolder "D:\eldewrito\eldewrito 0.7\ElDewrito\mods"
+Variable "modsfolder" set to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods".
+
+tags> SetVariable h2maps "E:\Halo Resources\Halo2V"
+Variable "h2maps" set to "E:\Halo Resources\Halo2V".
+
+tags> SetVariable h3maps "E:\Halo Resources\Halo3"
+Variable "h3maps" set to "E:\Halo Resources\Halo3".
+
+tags> SetVariable h3mythicmaps "E:\Halo Resources\Halo3mythic"
+Variable "h3mythicmaps" set to "E:\Halo Resources\Halo3mythic".
+
+tags> SetVariable odstmaps "E:\Halo Resources\Halo3odst"
+Variable "odstmaps" set to "E:\Halo Resources\Halo3odst".
+
+tags> SetVariable h3mccmaps "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps"
+Variable "h3mccmaps" set to "D:\Games\steamapps\common\Halo The Master Chief Collection\halo3\maps".
+
+tags> SetVariable workshop "D:\Games\steamapps\workshop\content\976730\2962955878"
+Variable "workshop" set to "D:\Games\steamapps\workshop\content\976730\2962955878".
+
+tags> SetVariable workingdir "C:\Users\Matthew\Documents\GitHub\H2AMP"
+Variable "workingdir" set to "C:\Users\Matthew\Documents\GitHub\H2AMP".
+
+tags> openmodpackage h2amp
+Initializing cache...
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> opencachefile "workingdir\maps\h2ampstuff.map"
+Loading cache...done.
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> porttag replace h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.scenery
+['bitm', 0x898A] h2\objects\multi\2way_teleporter_collapsable\bitmaps\2way_teleporter.bitmap
+['bitm', 0x0062] shaders\default_bitmaps\bitmaps\default_detail.bitmap
+['bitm', 0x898B] h2\objects\multi\2way_teleporter_collapsable\bitmaps\2way_teleporter_bump.bitmap
+['mode', 0x8988] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model
+['bitm', 0x898F] h2\objects\gear\covenant\military\bitmaps\cov_holo_generator.bitmap
+['bitm', 0x8990] h2\objects\gear\covenant\military\bitmaps\cov_holo_generator_illum.bitmap
+['bitm', 0x0009] shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+['bitm', 0x8993] h2\objects\multi\2way_teleporter_collapsable\bitmaps\plasma_offset.bitmap
+['bitm', 0x8994] h2\objects\multi\2way_teleporter_collapsable\bitmaps\teleporter_plasma_mask.bitmap
+['bitm', 0x009A] shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+['bitm', 0x065A] objects\bitmaps\default\grid_256x256.bitmap
+['bitm', 0x0074] shaders\default_bitmaps\bitmaps\default_vector.bitmap
+['jmad', 0x8995] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.model_animation_graph
+['hlmt', 0x8987] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.model
+['scen', 0x8986] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.scenery
+['rmt2', 0x721B] shaders\halogram_templates\_0_3_1_0_0_0_0_0_0.render_method_template
+['rmhg', 0x8992] h2\objects\multi\2way_teleporter_variant\shaders\teleporter_plasma.shader_halogram
+['rmt2', 0x8991] shaders\shader_templates\_0_0_0_1_4_2_1_1_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x898E] h2\objects\multi\2way_teleporter_variant\shaders\teleporter_emitter_core.shader
+['rmt2', 0x065B] shaders\shader_templates\_0_1_0_0_0_0_0_0_0_1_0_0_0_0_0.render_method_template
+['rmsh', 0x0659] shaders\invalid.shader
+['rmt2', 0x2BF6] shaders\shader_templates\_0_1_0_1_2_0_0_0_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x8989] h2\objects\multi\2way_teleporter_variant\shaders\2way_teleporter.shader
+['rmt2', 0x898D] shaders\shader_templates\_0_0_0_0_2_0_7_3_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x898C] h2\objects\multi\2way_teleporter_variant\shaders\2way_teleporter_luminous.shader
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> Exit
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> exitmodpackage
+
+tags> openmodpacakge h2amp
+[ERROR]: Unrecognized command "openmodpacakge"
+Use "help" to list available commands.
+
+tags> openmodpackage
+[ERROR]: Incorrect amount of arguments supplied
+Enter "Help OpenModPackage" for command syntax.
+
+tags> openmodpackage h2amp
+Initializing cache...
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> EditTag objects\multi\teleporter_sender\teleporter_sender.model
+Tag objects\multi\teleporter_sender\teleporter_sender.model has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> Setfield rendermodel h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model
+[ERROR]: An internal operation failed to evaluate
+> Field value could not be parsed for type "TagTool.Cache.CachedTag"
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SetField Animation objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Animation: CachedTag = [0x7282] objects\multi\2way_teleporter\2way_teleporter.model_animation_graph 
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SaveTagChanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> EditTag objects\multi\teleporter_sender\teleporter_sender.model
+Tag objects\multi\teleporter_sender\teleporter_sender.model has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SetField RenderModel h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model
+[ERROR]: An internal operation failed to evaluate
+> Field value could not be parsed for type "TagTool.Cache.CachedTag"
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SetField Animation objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Animation: CachedTag = [0x7282] objects\multi\2way_teleporter\2way_teleporter.model_animation_graph 
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SaveTagChanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> opencachefile "workingdir\maps\h2ampstuff.map"
+Loading cache...done.
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> porttag replace h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.scenery
+['bitm', 0x898A] h2\objects\multi\2way_teleporter_collapsable\bitmaps\2way_teleporter.bitmap
+['bitm', 0x0062] shaders\default_bitmaps\bitmaps\default_detail.bitmap
+['bitm', 0x898B] h2\objects\multi\2way_teleporter_collapsable\bitmaps\2way_teleporter_bump.bitmap
+['mode', 0x8988] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model
+['jmad', 0x8995] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.model_animation_graph
+['hlmt', 0x8987] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.model
+['scen', 0x8986] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.scenery
+['bitm', 0x898F] h2\objects\gear\covenant\military\bitmaps\cov_holo_generator.bitmap
+['bitm', 0x8990] h2\objects\gear\covenant\military\bitmaps\cov_holo_generator_illum.bitmap
+['bitm', 0x0009] shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+['bitm', 0x8993] h2\objects\multi\2way_teleporter_collapsable\bitmaps\plasma_offset.bitmap
+['bitm', 0x009A] shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+['bitm', 0x8994] h2\objects\multi\2way_teleporter_collapsable\bitmaps\teleporter_plasma_mask.bitmap
+['bitm', 0x065A] objects\bitmaps\default\grid_256x256.bitmap
+['bitm', 0x0074] shaders\default_bitmaps\bitmaps\default_vector.bitmap
+['rmt2', 0x721B] shaders\halogram_templates\_0_3_1_0_0_0_0_0_0.render_method_template
+['rmhg', 0x8992] h2\objects\multi\2way_teleporter_variant\shaders\teleporter_plasma.shader_halogram
+['rmt2', 0x8991] shaders\shader_templates\_0_0_0_1_4_2_1_1_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x898E] h2\objects\multi\2way_teleporter_variant\shaders\teleporter_emitter_core.shader
+['rmt2', 0x065B] shaders\shader_templates\_0_1_0_0_0_0_0_0_0_1_0_0_0_0_0.render_method_template
+['rmsh', 0x0659] shaders\invalid.shader
+['rmt2', 0x2BF6] shaders\shader_templates\_0_1_0_1_2_0_0_0_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x8989] h2\objects\multi\2way_teleporter_variant\shaders\2way_teleporter.shader
+['rmt2', 0x898D] shaders\shader_templates\_0_0_0_0_2_0_7_3_0_0_0_0_0_0_0.render_method_template
+['rmsh', 0x898C] h2\objects\multi\2way_teleporter_variant\shaders\2way_teleporter_luminous.shader
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> Exit
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> EditTag objects\multi\teleporter_sender\teleporter_sender.model
+Tag objects\multi\teleporter_sender\teleporter_sender.model has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SetField RenderModel h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model
+RenderModel: CachedTag = [0x8988] h2\objects\multi\2way_teleporter_variant\2way_teleporter_variant.render_model 
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SetField Animation objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Animation: CachedTag = [0x7282] objects\multi\2way_teleporter\2way_teleporter.model_animation_graph 
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> SaveTagChanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\teleporter_sender\teleporter_sender.model> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 4 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> exit
+[WARNING]: Use 'exitmodpackage' to leave a mod package context.
+
+tags\Halo 2 Advanced Multiplayer.pak> exitmodpackage h2amp
+
+tags> openmodpackage h2amp
+Initializing cache...
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> opencachefile "workingdir\maps\h2ampstuff.map"
+Loading cache...done.
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> porttag replace h2\objects\multi\2way_teleporter_variant\shaders\teleporter_plasma.shader_halogram
+['bitm', 0x0009] shaders\default_bitmaps\bitmaps\gray_50_percent.bitmap
+['bitm', 0x0062] shaders\default_bitmaps\bitmaps\default_detail.bitmap
+['bitm', 0x8987] h2\objects\multi\2way_teleporter_collapsable\bitmaps\plasma_offset.bitmap
+['bitm', 0x009A] shaders\default_bitmaps\bitmaps\clouds_256.bitmap
+['bitm', 0x8988] h2\objects\multi\2way_teleporter_collapsable\bitmaps\teleporter_plasma_mask.bitmap
+['rmt2', 0x721B] shaders\halogram_templates\_0_3_1_0_0_0_0_0_0.render_method_template
+['rmhg', 0x8986] h2\objects\multi\2way_teleporter_variant\shaders\teleporter_plasma.shader_halogram
+
+tags\Halo 2 Advanced Multiplayer.pak\h2ampstuff.map\tags> Exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 0 errors and 1 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> extractanimation anims\2way
+[ERROR]: Incorrect amount of arguments supplied
+Enter "Help ExtractAnimation" for command syntax.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> extractanimation all
+[ERROR]: Incorrect amount of arguments supplied
+Enter "Help ExtractAnimation" for command syntax.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> extractanimation all anims
+###Extracting 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Exporting "idle"
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> addanimation anims
+###Adding 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Successfully added mode entries for 'any:any:any:idle'!
+Replaced idle successfully!
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> savetagchanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 2 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> addanimation anims
+###Adding 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Successfully added mode entries for 'any:any:any:idle'!
+Added any:idle successfully!
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> savetagchanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> sortmodes
+Jmad modes sorted successfully.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> savetagchanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> addanimation anims
+###Adding 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Successfully added mode entries for 'any:any:any:idle'!
+Added any:any:idle successfully!
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> sortmodes
+Jmad modes sorted successfully.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> savetagchanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> addanimation anims
+###Adding 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Successfully added mode entries for 'any:any:any:idle'!
+Added any:any:any:idle successfully!
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> sortmodes
+Jmad modes sorted successfully.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> savetagchanges
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> exit
+
+tags\Halo 2 Advanced Multiplayer.pak> savemodpackage
+ModPackage saved to "D:\eldewrito\eldewrito 0.7\ElDewrito\mods\h2amp.pak".
+0 milliseconds elapsed with 0 errors and 0 warnings.
+
+tags\Halo 2 Advanced Multiplayer.pak> exitmodpackage
+
+tags> openmodpackage h2amp
+Initializing cache...
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak> 
+
+tags\Halo 2 Advanced Multiplayer.pak> edittag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph
+Tag objects\multi\2way_teleporter\2way_teleporter.model_animation_graph has been opened for editing.
+New commands are now available. Enter "help" to view them.
+Use "exit" to return to Halo 2 Advanced Multiplayer.pak.
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> addanimation anims
+###Adding 1 animation(s)...
+Animation nodes matched render model objects\multi\teleporter_sender\teleporter_sender
+Successfully added mode entries for 'any:any:any:idle'!
+Replaced idle successfully!
+Done!
+
+tags\Halo 2 Advanced Multiplayer.pak\objects\multi\2way_teleporter\2way_teleporter.model_animation_graph> sortmodes
+[ERROR]: System.NullReferenceException: Object reference not set to an instance of an object.
+   at TagTool.Animations.AnimationSorter.Sort(ModelAnimationGraph animationGraph) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Animations\AnimationSorter.cs:line 23
+   at TagTool.Commands.ModelAnimationGraphs.SortModesCommand.Execute(List`1 args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\ModelAnimationGraphs\SortModesCommand.cs:line 35
+   at TagTool.Commands.Common.CommandRunner.ExecuteCommand(CommandContext context, List`1 commandAndArgs, Dictionary`2 argVariables) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 159
+   at TagTool.Commands.Common.CommandRunner.RunCommand(String commandLine, Boolean printInput, Boolean printOutput) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Commands\Common\CommandRunner.cs:line 128
+   at TagTool.Commands.Program.RunCommandLoop(CommandRunner commandRunner, CommandContextStack contextStack) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 128
+   at TagTool.Commands.Program.MainCore(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 112
+   at TagTool.Commands.Program.Main(String[] args) in D:\a\TagTool-NET-Test\TagTool-NET-Test\TagTool\Program.cs:line 44
