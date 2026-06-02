@@ -434,7 +434,139 @@ porttag replace ui\chud\carbine.chud_definition
 porttag replace ui\chud\excavator.chud_definition
 porttag replace ui\chud\plasma_turret.chud_definition
 porttag replace ui\chud\t_plasmaturret.chud_definition
+
+porttag replace ui\chud\scoreboard.chud_definition
+porttag replace ui\chud\metagame_scoreboard.chud_definition
 exit
+
+
+## SPRINT METER, Spartan ##
+EditTag ui\chud\spartan.chud_definition
+AddBlockElements HudWidgets
+SetField HudWidgets[23].Name stamina_meter
+SetField HudWidgets[23].ScriptingClass Stamina
+AddBlockElements HudWidgets[23].StateData
+AddBlockElements HudWidgets[23].PlacementData
+SetField HudWidgets[23].ParallaxData ui\chud\parallax\spartan.chud_widget_parallax_data
+AddBlockElements HudWidgets[23].BitmapWidgets
+AddBlockElements HudWidgets[23].BitmapWidgets
+AddBlockElements HudWidgets[23].BitmapWidgets
+
+SetField HudWidgets[23].PlacementData[0].Anchor BottomLeft
+SetField HudWidgets[23].PlacementData[0].Offset 45 -50
+SetField HudWidgets[23].PlacementData[0].Scale 1 1
+
+SetField HudWidgets[23].BitmapWidgets[0].Name border
+AddBlockElements HudWidgets[23].BitmapWidgets[0].StateData
+
+AddBlockElements HudWidgets[23].BitmapWidgets[0].PlacementData
+SetField HudWidgets[23].BitmapWidgets[0].PlacementData[0].Anchor Parent
+SetField HudWidgets[23].BitmapWidgets[0].PlacementData[0].Offset 3 -3
+SetField HudWidgets[23].BitmapWidgets[0].PlacementData[0].Scale -0.96 -0.97
+
+AddBlockElements HudWidgets[23].BitmapWidgets[0].AnimationData
+SetField HudWidgets[23].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+SetField HudWidgets[23].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\stamina2.chud_animation_definition
+
+AddBlockElements HudWidgets[23].BitmapWidgets[0].RenderData
+SetField HudWidgets[23].BitmapWidgets[0].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[23].BitmapWidgets[0].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[23].BitmapWidgets[0].RenderData[0].OutputScalarA FlashAnimation
+
+SetField HudWidgets[23].BitmapWidgets[0].RuntimeWidgetIndex 130
+SetField HudWidgets[23].BitmapWidgets[0].Bitmap ui\chud\bitmaps\stamina_meter_border.bitmap
+
+SetField HudWidgets[23].BitmapWidgets[1].Name meter
+AddBlockElements HudWidgets[23].BitmapWidgets[1].PlacementData
+SetField HudWidgets[23].BitmapWidgets[1].PlacementData[0].Anchor Parent
+SetField HudWidgets[23].BitmapWidgets[1].PlacementData[0].Offset 3 -3
+SetField HudWidgets[23].BitmapWidgets[1].PlacementData[0].Scale -0.96 -0.97
+
+AddBlockElements HudWidgets[23].BitmapWidgets[1].AnimationData
+SetField HudWidgets[23].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+
+AddBlockElements HudWidgets[23].BitmapWidgets[1].RenderData
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].ShaderType Meter
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].ExternalInput UnitStaminaCurrent
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].LocalScalarB 1
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarA Input
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarB LocalA
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarC LocalB
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarD LocalC
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarE LocalD
+SetField HudWidgets[23].BitmapWidgets[1].RenderData[0].OutputScalarF RangeInput
+SetField HudWidgets[23].BitmapWidgets[1].RuntimeWidgetIndex 131
+SetField HudWidgets[23].BitmapWidgets[1].Bitmap ui\chud\bitmaps\stamina_meter.bitmap
+SetField HudWidgets[23].BitmapWidgets[2].RuntimeWidgetIndex 132
+SaveTagChanges
+Exit
+
+
+## SPRINT METER, Elite ##
+EditTag ui\chud\elite.chud_definition
+AddBlockElements HudWidgets
+SetField HudWidgets[20].Name stamina_meter
+SetField HudWidgets[20].ScriptingClass Stamina
+AddBlockElements HudWidgets[20].StateData
+AddBlockElements HudWidgets[20].PlacementData
+SetField HudWidgets[20].ParallaxData ui\chud\parallax\spartan.chud_widget_parallax_data
+AddBlockElements HudWidgets[20].BitmapWidgets
+AddBlockElements HudWidgets[20].BitmapWidgets
+AddBlockElements HudWidgets[20].BitmapWidgets
+
+SetField HudWidgets[20].PlacementData[0].Anchor BottomLeft
+SetField HudWidgets[20].PlacementData[0].Offset 45 -50
+SetField HudWidgets[20].PlacementData[0].Scale 1 1
+
+SetField HudWidgets[20].BitmapWidgets[0].Name border
+AddBlockElements HudWidgets[20].BitmapWidgets[0].StateData
+
+AddBlockElements HudWidgets[20].BitmapWidgets[0].PlacementData
+SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Anchor Parent
+SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Offset 3 -3
+SetField HudWidgets[20].BitmapWidgets[0].PlacementData[0].Scale -0.96 -0.97
+
+AddBlockElements HudWidgets[20].BitmapWidgets[0].AnimationData
+SetField HudWidgets[20].BitmapWidgets[0].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+SetField HudWidgets[20].BitmapWidgets[0].AnimationData[0].Flashing.Animation ui\chud\animations\stamina2.chud_animation_definition
+
+AddBlockElements HudWidgets[20].BitmapWidgets[0].RenderData
+SetField HudWidgets[20].BitmapWidgets[0].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[20].BitmapWidgets[0].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[20].BitmapWidgets[0].RenderData[0].OutputScalarA FlashAnimation
+
+SetField HudWidgets[20].BitmapWidgets[0].RuntimeWidgetIndex 144
+SetField HudWidgets[20].BitmapWidgets[0].Bitmap ui\chud\bitmaps\stamina_meter_border.bitmap
+
+SetField HudWidgets[20].BitmapWidgets[1].Name meter
+AddBlockElements HudWidgets[20].BitmapWidgets[1].PlacementData
+SetField HudWidgets[20].BitmapWidgets[1].PlacementData[0].Anchor Parent
+SetField HudWidgets[20].BitmapWidgets[1].PlacementData[0].Offset 3 -3
+SetField HudWidgets[20].BitmapWidgets[1].PlacementData[0].Scale -0.96 -0.97
+
+AddBlockElements HudWidgets[20].BitmapWidgets[1].AnimationData
+SetField HudWidgets[20].BitmapWidgets[1].AnimationData[0].Initializing.Animation ui\chud\animations\stamina1.chud_animation_definition
+
+AddBlockElements HudWidgets[20].BitmapWidgets[1].RenderData
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].ShaderType Meter
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].ExternalInput UnitStaminaCurrent
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].LocalScalarB 1
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputColorA SecondaryBackground
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputColorB PrimaryBackground
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputColorC HighlightForeground
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarA Input
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarB LocalA
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarC LocalB
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarD LocalC
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarE LocalD
+SetField HudWidgets[20].BitmapWidgets[1].RenderData[0].OutputScalarF RangeInput
+SetField HudWidgets[20].BitmapWidgets[1].RuntimeWidgetIndex 83
+SetField HudWidgets[20].BitmapWidgets[1].Bitmap ui\chud\bitmaps\stamina_meter.bitmap
+SaveTagChanges
+Exit
 	
 #echo Grenades
 edittag ui\chud\spartan.chud_definition
@@ -1026,3 +1158,16 @@ edittag ui\hud\hud_messages.multilingual_unicode_string_list
 cs < remove.cs training
 savetagchanges
 exit
+
+#echo medals
+
+opencachefile "360CampaignMaps\010_jungle.map"
+porttag replace ui\chud\bitmaps\medals\medals.bitmap
+Exit
+
+EditTag ui\chud\metagame_scoreboard.chud_definition
+SetField HudWidgets[0].BitmapWidgets[0].Bitmap ui\chud\bitmaps\medals\medals.bitmap
+savetagchanges
+exit
+
+
