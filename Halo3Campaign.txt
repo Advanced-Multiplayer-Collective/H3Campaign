@@ -185,6 +185,12 @@ switchtagcache 0
 echo Halo3AIO
 RunCommands "WorkingDir\Halo3AIO.cmds"
 
+echo magnum in cutscene fix
+
+opencachefile "360CampaignMaps\005_intro.map"
+porttag replace objects\weapons\pistol\magnum\magnum.weapon
+exit
+
 echo customization in cutscenes
 edittag levels\solo\005_intro\005_intro.scenario
 addblockelements CampaignPlayers
@@ -374,6 +380,7 @@ cs < UpdateCISCRepresentation.cs
 switchtagcache 10 
 
 echo Halo3AIO
+RunCommands "WorkingDir\Halo3AIO.cmds"
 
 echo customization in cutscenes
 edittag levels\solo\130_epilogue\130_epilogue.scenario

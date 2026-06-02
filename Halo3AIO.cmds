@@ -3,6 +3,7 @@
 		ECHO ASSAULT RIFLE
 		
 opencachefile "360CampaignMaps\sandbox.map"
+porttag replace objects\weapons\rifle\assault_rifle\fp_assault_rifle\fp_assault_rifle.render_model
 porttag replace objects\weapons\rifle\assault_rifle\assault_rifle.render_model
 porttag replace objects\weapons\lod\lod_assault_rifle\lod_assault_rifle.render_model
 porttag replace objects\weapons\rifle\assault_rifle\fx\firing.effect
@@ -510,6 +511,39 @@ exit
 importfonts "WorkingDir\h3fonts.bin"
 rescalehudtext 0.45
 
+#echo Johnsons hat
+
+opencachefile "360CampaignMaps\010_jungle.map"
+porttag replace objects\characters\marine\bitmaps\marine_arm_pack_perm_diffuse.bitmap
+exit
+
+#echo spike and fire grenade hud fix
+
+Edittag ui\chud\spartan.chud_definition
+SetField HudWidgets[7].ScriptingClass Grenades
+SetField HudWidgets[8].ScriptingClass Grenades
+savetagchanges
+exit
+
+Edittag ui\chud\spartan.chud_definition
+SetField HudWidgets[6].ScriptingClass Grenades
+SetField HudWidgets[7].ScriptingClass Grenades
+savetagchanges
+exit
+
+#echo ODST shader and shoulder fix
+
+opencachefile "360CampaignMaps\100_citadel.map"
+porttag replace objects\characters\odst\shaders\odst_armor.shader
+porttag replace objects\characters\odst\shaders\odst_badges.shader_decal
+porttag replace objects\characters\odst\shaders\odst_handwriting.shader_decal
+exit
+
+EditTag objects\characters\odst\shaders\odst_armor.shader
+SetArgument specular_coefficient 0.1
+savetagchanges
+exit
+
 
 #echo hud equipment schematics
 
@@ -975,5 +1009,20 @@ SetField HudWidgets[19].BitmapWidgets[2].RuntimeWidgetIndex 82
 SetField HudWidgets[19].BitmapWidgets[0].PlacementData[0].Offset 20 165
 SetField HudWidgets[19].BitmapWidgets[0].PlacementData[0].Scale 1.75 1.75
 RemoveBlockElements HudWidgets[19].TextWidgets 0 1
+savetagchanges
+exit
+
+
+#echo fix deployable cover hud
+edittag multiplayer\multiplayer_globals.multiplayer_globals
+SetField Universal[0].Equipment[10].Object objects\equipment\instantcover_equipment\instantcover_equipment.equipment
+SetField Universal[0].Equipment[10].Type 0
+savetagchanges
+exit
+
+
+#echo fix hints
+edittag ui\hud\hud_messages.multilingual_unicode_string_list
+cs < remove.cs training
 savetagchanges
 exit
