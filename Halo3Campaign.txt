@@ -26,14 +26,10 @@ campaign
 
 generatecampaignfile "360CampaignMaps\Info"
 
-	#005 intro
+	echo 005 intro
+	
 opencachefile "360CampaignMaps\005_intro.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -45,11 +41,6 @@ opencachefile "360CampaignMaps\010_jungle.map"
 porttag *.scnr
 exit
 
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
-exit
-
 updatemapfiles "360CampaignMaps\Info"
 switchtagcache 2
 
@@ -57,11 +48,6 @@ switchtagcache 2
 
 opencachefile "360CampaignMaps\020_base.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -73,11 +59,6 @@ opencachefile "360CampaignMaps\030_outskirts.map"
 porttag *.scnr
 exit
 
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
-exit
-
 updatemapfiles "360CampaignMaps\Info"
 switchtagcache 4
 
@@ -85,11 +66,6 @@ switchtagcache 4
 		
 opencachefile "360CampaignMaps\040_voi.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -101,11 +77,6 @@ opencachefile "360CampaignMaps\050_floodvoi.map"
 porttag *.scnr
 exit
 
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
-exit
-
 updatemapfiles "360CampaignMaps\Info"
 switchtagcache 6
 
@@ -113,11 +84,6 @@ switchtagcache 6
 		
 opencachefile "360CampaignMaps\070_waste.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -129,11 +95,6 @@ opencachefile "360CampaignMaps\100_citadel.map"
 porttag *.scnr
 exit
 
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
-exit
-
 updatemapfiles "360CampaignMaps\Info"
 switchtagcache 8
 
@@ -141,11 +102,6 @@ switchtagcache 8
 		
 opencachefile "360CampaignMaps\110_hc.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -157,11 +113,6 @@ opencachefile "360CampaignMaps\120_halo.map"
 porttag *.scnr
 exit
 
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
-exit
-
 updatemapfiles "360CampaignMaps\Info"
 switchtagcache 10
 
@@ -169,11 +120,6 @@ switchtagcache 10
 		
 opencachefile "360CampaignMaps\130_epilogue.map"
 porttag *.scnr
-exit
-
-edittag *.scnr
-SetField Flags H3Compatibility
-savetagchanges
 exit
 
 updatemapfiles "360CampaignMaps\Info"
@@ -203,7 +149,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 1
 
@@ -222,7 +167,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 
 switchtagcache 2
@@ -242,7 +186,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 3
 
@@ -261,7 +204,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 4
 
@@ -280,7 +222,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 5
 
@@ -299,7 +240,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 6
 
@@ -318,7 +258,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 7
 
@@ -337,7 +276,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 8
 
@@ -356,7 +294,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 9
 
@@ -375,7 +312,6 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 switchtagcache 10 
 
@@ -394,14 +330,7 @@ addblockelements CampaignPlayers
 setfield CampaignPlayers[3].PlayerRepresentationName masterchief
 savetagchanges
 exit
-cs < UpdateCISCRepresentation.cs
 
 
 AddModFiles "WorkingDir\modfiles"
 savemodpackage H3Campaign.pak
-
-
-
-
-
-
