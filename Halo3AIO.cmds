@@ -440,7 +440,8 @@ porttag replace ui\chud\metagame_scoreboard.chud_definition
 exit
 
 
-## SPRINT METER, Spartan ##
+
+#echo SPRINT METER, Spartan ##
 EditTag ui\chud\spartan.chud_definition
 AddBlockElements HudWidgets
 SetField HudWidgets[23].Name stamina_meter
@@ -505,7 +506,7 @@ SaveTagChanges
 Exit
 
 
-## SPRINT METER, Elite ##
+#echo Sprint SPRINT METER, Elit
 EditTag ui\chud\elite.chud_definition
 AddBlockElements HudWidgets
 SetField HudWidgets[20].Name stamina_meter
@@ -1170,4 +1171,19 @@ SetField HudWidgets[0].BitmapWidgets[0].Bitmap ui\chud\bitmaps\medals\medals.bit
 savetagchanges
 exit
 
+#echo Fix Colorable HUD, Spartan 
+edittag ui\chud\spartan.chud_definition
+setfield HudWidgets[4].BitmapWidgets[0].RenderData[0].OutputColorB PrimaryBackground
+setfield HudWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorB HighlightForeground
+SaveTagChanges
+Exit
 
+#echo Fix Pickup Scale
+edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpDestinationOffsetZ -0.9
+setfield HudGlobals[0].HudAttributes[0].MessageHeight 35
+setfield HudGlobals[0].HudAttributes[0].MessageScale 0.69
+setfield HudGlobals[0].HudAttributes[0].StateMessageScale 0.8
+SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0 0.15
+SaveTagChanges
+Exit
