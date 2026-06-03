@@ -366,6 +366,7 @@ Exit
 		echo Vehicles
 		
 opencachefile "360CampaignMaps\sandbox.map"
+ignoreblamtag objects\characters\masterchief\fp\weapons\rifle\fp_sniper_rifle\fp_sniper_rifle.model_animation_graph
 porttag replace regex .*warthog.*.mode
 porttag replace regex .*mongoose.*.mode
 porttag replace regex .*hornet.*.mode
@@ -375,7 +376,6 @@ porttag replace regex .*ghost.*.mode
 porttag replace regex .*wraith.*.mode
 porttag replace regex .*scorpion.*.mode
 exit
-
 
 	echo hud
 
@@ -1187,7 +1187,7 @@ SetField HudGlobals[0].HudAttributes[0].WarpDestinationZOffset -0.9
 setfield HudGlobals[0].HudAttributes[0].MessageHeight 35
 setfield HudGlobals[0].HudAttributes[0].MessageScale 0.69
 setfield HudGlobals[0].HudAttributes[0].StateMessageScale 0.8
-SetField HudGlobals[0].HudAttributes[0].MessageOffset 0 0.15
+SetField HudGlobals[0].HudAttributes[0].MessageOffset 0 0.7
 SaveTagChanges
 Exit
 
