@@ -505,8 +505,13 @@ SetField HudWidgets[23].BitmapWidgets[2].RuntimeWidgetIndex 132
 SaveTagChanges
 Exit
 
+EditTag ui\chud\spartan.chud_definition
+SetField HudWidgets[23].StateData[0].UnitZoomFlags BinocularsEnabled
+savetagchanges
+exit
 
-#echo Sprint SPRINT METER, Elit
+
+#echo Sprint SPRINT METER, Elite
 EditTag ui\chud\elite.chud_definition
 AddBlockElements HudWidgets
 SetField HudWidgets[20].Name stamina_meter
@@ -568,6 +573,11 @@ SetField HudWidgets[20].BitmapWidgets[1].RuntimeWidgetIndex 83
 SetField HudWidgets[20].BitmapWidgets[1].Bitmap ui\chud\bitmaps\stamina_meter.bitmap
 SaveTagChanges
 Exit
+
+EditTag ui\chud\elite.chud_definition
+SetField HudWidgets[20].StateData[0].UnitZoomFlags BinocularsEnabled
+savetagchanges
+exit
 	
 #echo Grenades
 edittag ui\chud\spartan.chud_definition
@@ -1171,19 +1181,22 @@ SetField HudWidgets[0].BitmapWidgets[0].Bitmap ui\chud\bitmaps\medals\medals.bit
 savetagchanges
 exit
 
-#echo Fix Colorable HUD, Spartan 
+#echo Fix Pickup Scale
+edittag ui\chud\globals.chud_globals_definition
+SetField HudGlobals[0].HudAttributes[0].WarpDestinationZOffset -0.9
+setfield HudGlobals[0].HudAttributes[0].MessageHeight 35
+setfield HudGlobals[0].HudAttributes[0].MessageScale 0.69
+setfield HudGlobals[0].HudAttributes[0].StateMessageScale 0.8
+SetField HudGlobals[0].HudAttributes[0].MessageOffset 0 0.15
+SaveTagChanges
+Exit
+
+
+#echo Fix Colorable HUD, Spartan ##
 edittag ui\chud\spartan.chud_definition
 setfield HudWidgets[4].BitmapWidgets[0].RenderData[0].OutputColorB PrimaryBackground
 setfield HudWidgets[2].BitmapWidgets[2].RenderData[0].OutputColorB HighlightForeground
 SaveTagChanges
 Exit
 
-#echo Fix Pickup Scale
-edittag ui\chud\globals.chud_globals_definition
-SetField HudGlobals[0].HudAttributes[0].WarpDestinationOffsetZ -0.9
-setfield HudGlobals[0].HudAttributes[0].MessageHeight 35
-setfield HudGlobals[0].HudAttributes[0].MessageScale 0.69
-setfield HudGlobals[0].HudAttributes[0].StateMessageScale 0.8
-SetField HudGlobals[0].HudAttributes[0].StateMessageOffset 0 0.15
-SaveTagChanges
-Exit
+
