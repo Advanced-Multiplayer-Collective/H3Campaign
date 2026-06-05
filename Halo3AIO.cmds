@@ -506,7 +506,7 @@ SaveTagChanges
 Exit
 
 EditTag ui\chud\spartan.chud_definition
-SetField HudWidgets[23].StateData[0].UnitZoomFlags BinocularsEnabled
+SetField HudWidgets[23].StateData[0].UnitZoomState Unzoomed
 savetagchanges
 exit
 
@@ -575,7 +575,7 @@ SaveTagChanges
 Exit
 
 EditTag ui\chud\elite.chud_definition
-SetField HudWidgets[20].StateData[0].UnitZoomFlags BinocularsEnabled
+SetField HudWidgets[20].StateData[0].UnitZoomState Unzoomed
 savetagchanges
 exit
 	
